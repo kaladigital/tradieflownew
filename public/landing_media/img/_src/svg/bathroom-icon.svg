@@ -1,0 +1,25 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M35.75 44H8.25C3.69325 44 0 40.3068 0 35.75V8.25C0 3.69325 3.69325 0 8.25 0H35.75C40.3068 0 44 3.69325 44 8.25V35.75C44 40.3068 40.3068 44 35.75 44Z" fill="#43D14F" fill-opacity="0.2"/>
+<path d="M16 10C16 8.89543 16.8954 8 18 8H20C21.1046 8 22 8.89543 22 10V13H16V10Z" fill="#43D14F" fill-opacity="0.8"/>
+<path d="M8 25.6667C8 25.2985 8.29848 25 8.66667 25H37C37 26.1046 36.1046 27 35 27H9.33333C8.59695 27 8 26.403 8 25.6667Z" fill="#43D14F" fill-opacity="0.8"/>
+<rect x="6.5" y="23.5" width="31" height="3" rx="1.5" stroke="#031F88"/>
+<path d="M10 29C10 28.4477 10.4477 28 11 28H36V32C36 34.2091 34.2091 36 32 36H12C10.8954 36 10 35.1046 10 34V29Z" fill="#43D14F" fill-opacity="0.8"/>
+<path d="M8.5 26.5H35.5V32C35.5 33.933 33.933 35.5 32 35.5H12C10.067 35.5 8.5 33.933 8.5 32V26.5Z" stroke="#031F88"/>
+<rect x="14" y="35" width="1" height="3" rx="0.5" fill="#031F88"/>
+<rect x="29" y="35" width="1" height="3" rx="0.5" fill="#031F88"/>
+<path d="M14.5 10C14.5 8.067 16.067 6.5 18 6.5C19.933 6.5 21.5 8.067 21.5 10V12.5H14.5V10Z" stroke="#031F88"/>
+<rect x="13" y="12" width="10" height="1" rx="0.5" fill="#031F88"/>
+<path d="M15 8.49844L12.9965 8.49829L12.4971 8.49822C10.2877 8.49788 8.49649 10.2888 8.49649 12.4982L8.49648 23.9986" stroke="#031F88"/>
+<rect x="14.5" y="14" width="1" height="1" rx="0.5" fill="#031F88"/>
+<rect x="16.5" y="14" width="1" height="1" rx="0.5" fill="#031F88"/>
+<rect x="18.5" y="14" width="1" height="1" rx="0.5" fill="#031F88"/>
+<rect x="20.5" y="14" width="1" height="1" rx="0.5" fill="#031F88"/>
+<rect x="14.5" y="16" width="1" height="1" rx="0.5" fill="#031F88"/>
+<rect x="16.5" y="16" width="1" height="1" rx="0.5" fill="#031F88"/>
+<rect x="18.5" y="16" width="1" height="1" rx="0.5" fill="#031F88"/>
+<rect x="20.5" y="16" width="1" height="1" rx="0.5" fill="#031F88"/>
+<rect x="14.5" y="18" width="1" height="1" rx="0.5" fill="#031F88"/>
+<rect x="16.5" y="18" width="1" height="1" rx="0.5" fill="#031F88"/>
+<rect x="18.5" y="18" width="1" height="1" rx="0.5" fill="#031F88"/>
+<rect x="20.5" y="18" width="1" height="1" rx="0.5" fill="#031F88"/>
+</svg>

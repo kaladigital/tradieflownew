@@ -1,0 +1,6 @@
+[23-Jun-2021 08:06:16 UTC] PHP Warning:  Undefined array key "token" in /var/www/html/roundcubemail/index.php on line 273
+[23-Jun-2021 08:06:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/roundcubemail/index.php on line 276
+[23-Jun-2021 08:06:16 UTC] PHP Warning:  Undefined array key "token" in /var/www/html/roundcubemail/program/include/rcmail_output_html.php on line 2250
+[23-Jun-2021 08:06:34 +0000]: <lfls2lfv> PHP Error: Request security check failed (POST /cubemail/?_task=mail&_action=refresh)
+[23-Jun-2021 08:06:39 +0000]: <lfls2lfv> PHP Error: Request security check failed (POST /cubemail/?_task=mail&_action=refresh)
+[23-Jun-2021 08:07:03 +0000]: <lfls2lfv> PHP Error: Request security check failed (POST /cubemail/?_task=mail&_action=refresh)

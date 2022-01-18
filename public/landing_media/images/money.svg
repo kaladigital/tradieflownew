@@ -1,0 +1,20 @@
+<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1.2168" y="12.5391" width="17.9296" height="10.7578" rx="2" transform="rotate(-45 1.2168 12.5391)" fill="#C4E1C7"/>
+<rect x="1.2168" y="12.5391" width="17.9296" height="10.7578" rx="2" transform="rotate(-45 1.2168 12.5391)" stroke="#031F88"/>
+<rect x="0.5" y="7.875" width="17.6442" height="10.9516" rx="2" transform="rotate(-15 0.5 7.875)" fill="#C4E1C7"/>
+<path d="M2.06937 9.54014C1.92642 9.00668 2.24301 8.45834 2.77647 8.3154L17.806 4.28824L19.4487 12.5599C19.5484 13.0619 19.2529 13.5582 18.7641 13.7098L4.38174 18.17L2.06937 9.54014Z" fill="#43D14F" fill-opacity="0.8"/>
+<rect x="0.5" y="7.875" width="17.6442" height="10.9516" rx="2" transform="rotate(-15 0.5 7.875)" stroke="#031F88"/>
+<circle cx="10.4378" cy="10.8821" r="3.65053" transform="rotate(-15 10.4378 10.8821)" stroke="#031F88"/>
+<path d="M11.0221 9.88529C11.0221 9.88529 10.9409 9.06718 10.0285 9.31166C9.24466 9.5217 9.41207 10.1471 9.45463 10.3053C9.72766 11.3201 11.1617 10.4078 11.4416 11.4526C11.5816 11.975 11.3905 12.3061 10.8681 12.4461C9.92366 12.6991 9.87508 11.8723 9.87508 11.8723" stroke="#031F88" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="9.72223" y="8.69717" width="0.27041" height="0.811229" rx="0.135205" transform="rotate(-15 9.72223 8.69717)" fill="#031F88" stroke="#031F88" stroke-width="0.27041"/>
+<rect x="10.7027" y="12.3495" width="0.27041" height="0.811228" rx="0.135205" transform="rotate(-15 10.7027 12.3495)" fill="#031F88" stroke="#031F88" stroke-width="0.27041"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="4" width="19" height="14">
+<rect x="1.72474" y="8.58211" width="15.6442" height="8.95159" rx="3" transform="rotate(-15 1.72474 8.58211)" fill="#C4C4C4" stroke="#031F88" stroke-width="2"/>
+</mask>
+<g mask="url(#mask0)">
+<circle cx="1.99041" cy="8.7365" r="1.93369" transform="rotate(-15 1.99041 8.7365)" stroke="#031F88"/>
+<circle cx="16.6838" cy="4.799" r="1.93369" transform="rotate(-15 16.6838 4.799)" stroke="#031F88"/>
+<circle cx="18.8888" cy="13.0256" r="1.93369" transform="rotate(-15 18.8888 13.0256)" stroke="#031F88"/>
+<circle cx="4.19549" cy="16.9631" r="1.93369" transform="rotate(-15 4.19549 16.9631)" stroke="#031F88"/>
+</g>
+</svg>

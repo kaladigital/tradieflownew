@@ -1,0 +1,26 @@
+//PX to REM
+$baseFontSize: 10;
+// Function for converting a px based font-size to rem.
+@function rem($size) {
+  $remSize: $size / $baseFontSize;
+  //Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+  // font-size: $size + px;
+  font-size: rem($size);
+}
+
+// Custom Grid paddings
+@mixin custom-grid-padding($size) {
+  margin-right: -#{$size};
+  margin-left: -#{$size};
+
+  & > [class*="column-"],
+  & > [class*="column"] {
+    padding-right: $size;
+    padding-left: $size;
+  }
+}

@@ -1,0 +1,794 @@
+@import "vars"
+
+.visible-md
+    display: none !important
+/*==========  Desktop First  ==========*/
+@media screen and (min-width: 1200px)
+    .tab-content-img
+        justify-content: flex-start
+
+    .v-pills-save-time
+        margin-left: rem(45)
+    .v-pills-get-paid
+        padding-top: rem(45)
+        margin-left: rem(41)
+    .v-pills-more-efficient
+        padding-top: rem(45)
+        margin-left: rem(41)
+    .v-pills-customers
+        margin-left: rem(45)
+    .v-pills-pocket
+        margin-left: rem(91)
+
+@media screen and (min-width:992px)
+    .features-sect
+        .features-column
+            flex-basis: rem(406)
+            max-width: rem(406)
+
+
+@media screen and (min-width:768px)
+    .top-sect
+        h1
+            padding-top: rem(24)
+
+
+@media screen and (max-width:1399px)
+    .top-sect .descr
+        padding-right: 8rem
+
+    .tab-content-img
+        img
+            max-width: 100%
+
+@media screen and (max-width:1199px)
+    .top-sect .descr
+        padding-right: 0
+    .top-nav a
+        font-size: 14px
+        line-height: 18px
+        margin: 0 5px
+    .login-nav a:not(.btn)
+        font-size: 14px
+        line-height: 18px
+
+    .free-demo-btn
+        min-width: 95px
+    .main-nav
+        margin: 0 -15px
+    .demo-sect .main-img:before
+        left: -80px
+        background-size: 190px
+    .demo-sect .main-img:after
+        right: 30px
+    .main-img
+	    iframe
+            left: 0
+            width: 600px
+            height: 1050px
+            box-shadow: 0 1px 8px 0 rgba(0,0,0,.08)
+    html
+        font-size: 8px
+    .grow-up .container
+        max-width: 993px
+
+    .top-sect, .top-sect>.container:before
+      min-height: calc(510px + (965 - 510) * ((100vw - 768px) / (1199 - 768)))
+
+    .logo
+        img
+            max-width: 100%
+    .v-pills-save-time
+    	background-size: 53rem
+    .v-pills-get-paid
+    	background-size: 60.5rem
+    .v-pills-more-efficient
+    	background-size: 60.5rem
+    .v-pills-win-quotes
+    	background-size: 73rem
+    .v-pills-customers
+    	background-size: 69rem
+    .v-pills-pocket
+    	background-size: 63.8rem
+    .top-sect p
+        font-size: 20px
+        line-height: 25px
+    .saved-hours-sect .info-item p
+        font-size: 16px
+        line-height: 24px
+    .saved-hours-sect .info-item .title
+        font-size: 18px
+        line-height: 24px
+    h2
+        font-size: 4rem
+        line-height: 5.5rem
+    .why-us-sect h2
+        font-size: 3.3rem
+        line-height: 5.2rem
+    .why-us-sect .items-wrap .item
+        padding: 15px
+    .why-us-sect .items-wrap .item p
+        font-size: 13px
+        line-height: 20px
+    .why-us-sect .items-wrap .item .title
+        font-size: 16px
+        line-height: 20px
+    .why-us-sect .items-wrap .item.green-item p
+        font-size: 1.6rem
+        line-height: 2.3rem
+    .contact-sect .descr
+        padding-left: 0
+        p
+            font-size: 16px
+            line-height: 24px
+            br
+                display: none
+    .features-tabs .nav-link p
+        font-size: 14px
+        line-height: 23px
+
+    .features-tabs .nav-link .title
+        font-size: 16px
+        line-height: 28px
+    .contact-form .form-group .form-control
+        font-size: 14px
+        line-height: 34px
+    .sign-up-form .form-group .form-control
+        font-size: 14px
+        line-height: 24px
+    .main-footer .copyright
+        font-size: 14px
+        line-height: 18px
+    .modal .modal-dialog .modal-content .contact-search-form .form-control
+        font-size: 16px
+        line-height: 20px
+        padding-top: 5px
+    .modal .modal-dialog .modal-content .contact-search-form .btn
+        top: 10px
+        left: 5px
+
+@media screen and (max-width: 991px)
+    html
+        //font-size: 8px
+    .visible-md
+        display: block!important
+
+    .grow-up .container
+        max-width: 769px
+
+    .about-us-sect
+        padding-top: 52px
+        padding-bottom: 45px
+        .descr
+            padding-left: 0
+            h2
+                margin-bottom: 20px
+    .about-us-sect
+        blockquote
+            left: 0
+            padding-top: 5px
+            p
+                font-size: 14px
+                line-height: 24px
+                word-break: keep-all
+                margin-bottom: 16px
+            .info
+                font-size: 16px
+                line-height: 24px
+                margin-bottom: 15px
+            span.name
+                font-size: 16px
+                line-height: 24px
+            span.position
+                font-size: 13px
+                line-height: 24px
+                margin-bottom: 0
+            picture
+                position: relative
+                display: inline-block
+                left: -10px
+    .main-img
+	    iframe
+            left: 0
+            width: 100%
+            height: 1150px
+            box-shadow: unset
+            position: relative
+            top: -66px
+    .demo-sect
+        padding-top: 85px
+        text-align: left
+        .container
+            //max-width: 100%
+        h2
+            font-size: 36px
+            line-height: 44px
+            padding-right: 20px
+            margin-bottom: 22px
+            margin-top: 50px
+            span
+                display: block
+        p
+            font-size: 16px
+            line-height: 24px
+            max-width: 310px
+        picture
+            img
+                width: 100%
+        .main-img
+            margin: 184px auto 0
+            max-width: 992px
+            &:after
+                bottom: auto
+                top: -158px
+                left: -17px
+                background-size: 95px
+                right: auto
+            &:before
+                left: auto
+                right: -80px
+                top: -390px
+                background-size: 225px
+
+
+    //FEATURES
+    .features-tabs
+        margin-top: 25px
+
+        .nav-link.active
+            padding: 0
+
+            &:before
+                display: none
+
+    .features-tabs .nav-link .title
+        font-size: 16px
+        line-height: 28px
+        margin-bottom: 8px
+
+    .features-sect .tab-content-img
+        display: none
+
+    .features-tabs .nav-link
+        padding: 0
+        margin-bottom: 42px
+        border: none !important
+
+        picture
+            display: block
+            text-align: center
+            margin-bottom: 25px
+            img
+                max-width: 100%
+        p
+            display: block!important
+            opacity: 1!important
+            visability: visible!important
+
+    .tab-content-img .tab-pane
+        background-position: center 12rem
+        margin-right: 0
+
+
+    .features-tabs .nav-link.active
+        background-color: transparent!important
+        box-shadow: unset
+
+
+    .features-tabs .nav-link p
+        font-size: 14px
+        line-height: 24px
+
+
+    .iSDZ5t7E7z._15N04lKjtm
+        max-width: 100%!important
+        width: 100%!important
+        overflow: hidden
+
+@media screen and (max-width:767px)
+    html, body
+        min-width: 370px
+    .demo-sect .main-img
+        margin: 184px -15px 0
+    .modal .modal-dialog
+        max-width: 92%
+        margin: 0 auto
+    .modal .modal-dialog .modal-content .btn-close
+        right: 7px
+        top: 11px
+    .modal .modal-dialog .modal-body
+        background-size: contain
+        background-position: right 168px
+        background-size: 253px
+    .modal .modal-dialog .modal-content .right-side
+        padding-top: 48px
+        padding-bottom: 200px
+        h2
+            font-size: 42px
+            line-height: 53px
+    .modal .modal-dialog .modal-body
+        flex-direction: column-reverse
+    .modal .modal-dialog .modal-content .contact-search-form .users-list
+        min-height: unset
+        padding-top: 0
+        height: 300px
+    .modal .modal-dialog .modal-content.scrolled
+        .contact-search-form
+            position: absolute
+            top: 0
+            left: 0
+            .users-list
+                height: 80vh
+            .form-control
+                width: 90%
+        .btn-close
+            top: 48px
+    .modal .modal-dialog .modal-content .contact-search-form .ui-menu
+        top: 0!important
+    .modal .modal-dialog .modal-content .contact-search-form .ui-menu a
+        font-size: 14px
+        line-height: 18px
+        padding-top: 24px
+        padding-bottom: 16px
+    .modal .modal-dialog .modal-content
+        height: 94vh
+        .contact-search-form
+            padding: 30px 16px 16px
+            .form-control
+                margin-bottom: 30px
+                min-height: 54px
+                width: 100%
+                display: block
+                max-width: unset
+                font-size: 16px
+                line-height: 20px
+                padding-right: 20px
+                padding-left: 46px
+            .btn
+                left: 11px
+                top: 15px
+            .users-list
+                margin-right: 0
+                padding-right: 0
+    .main-head
+        padding-top: 20px
+        padding-bottom: 20px
+        .show-nav
+            top: -5px
+            right: 15px
+    .sect-title
+        font-size: 14px
+
+    .top-sect
+        &>.container:before
+            top: 83px
+            left: calc(50% + 75px)
+            transform: translateX(-50%)
+            min-height: initial
+            height: 391px
+
+        h1
+            min-height: 131px
+            font-size: 36px
+            line-height: 44px
+            margin-bottom: 355px
+
+        .btn-default
+            min-height: 48px
+            font-size: 14px
+            line-height: 18px
+    h2
+        font-size: 36px
+        line-height: 44px
+    .top-sect p
+        font-size: 16px
+        line-height: 24px
+    .top-sect .descr
+        padding-right: 0
+
+    .visible-xs
+        display: block!important
+
+    .hidden-xs
+        display: none!important
+
+    .top-nav
+        .logo
+            img
+                width: 225px
+    .top-nav
+        display: none
+        position: fixed
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        top: 0
+        left: 0
+        right: 0
+        margin: 0 auto
+        width: 100%
+        height: 100%
+        background-color: $white
+        z-index: 999
+        padding: 22px 0 60px
+        .main-nav
+            position: relative
+            top: -8vh
+            background-color: #fff
+            z-index: 30
+            width: 100%
+            a
+                font-size: 24px
+                line-height: 30px
+                margin: 0 1rem 33px
+                text-align: center
+                display: block
+        .login-nav
+            width: 100%
+            left: 0
+            a
+                border: 1px solid $green
+                background-color: $white
+                font-size: 14px
+                line-height: 48px
+                text-align: center
+                border-radius: 4px
+                display: block
+                min-height: 48px
+                margin: 0 16px
+            .btn
+                width: auto
+                min-height: 48px
+                margin: 20px 16px 0
+                max-width: unset
+                padding: 0
+                background-color: $green
+                color: $white
+        .close
+            position: absolute
+            top: 23px
+            right: 5px
+            svg
+                path
+                    fill: $grayD
+    header
+        .btn
+            max-width: 12rem
+            margin-left: 1rem
+    p
+        font-size: 14px
+        line-height: 24px
+
+    .show-nav
+        display: block
+        top: .5rem
+        right: 2rem
+    .container
+        max-width: 100%
+    .top-sect
+        min-height: unset
+        padding-top: 15rem
+    h1, h2
+        br
+            display: none
+    .close
+        display: block
+    .features-sect
+        padding-top: 49px
+        padding-bottom: 32px
+        .tab-content-img
+            position: static
+    .saved-hours-sect
+        padding-top: 50px
+        padding-bottom: 30px
+        .info-item
+            left: 0
+            .title
+                font-size: 16px
+                line-height: 24px
+                margin-bottom: 15px
+            p
+                font-size: 14px
+                line-height: 24px
+        h2
+            position: static
+        .preview-img img
+            max-width: 100%
+        .preview-descr
+            max-width: 95%
+            margin-top: -118px
+            top: 0
+            min-height: 230px
+            padding: 30px 32px
+            margin-bottom: 42px
+            position: relative
+            left: -1px
+            &::after
+                width: 84px
+                height: 84px
+                bottom: -15px
+                right: -13px
+            p
+                font-size: 18px
+                line-height: 27px
+                margin-bottom: 16px
+            .name
+                padding-left: 2px
+                font-size: 16px
+                line-height: 24px
+            picture
+                margin-top: 5px
+                margin-left: 20px
+    .pricing-sect
+        padding-bottom: 40px
+        padding-top: 47px
+        .btn-default
+            min-height: 48px
+            left: -20px
+            margin-top: 3px
+            font-size: 14px
+            line-height: 18px
+        .descr
+            text-align: left
+        h2
+            margin-top: 12px
+    .plan-item
+        max-width: 100%
+        margin: 20px auto 4px
+        padding: 20px
+        .status
+            min-width: 94px
+            min-height: 28px
+            font-size: 14px
+            line-height: 20px
+            display: inline-flex
+            align-items: center
+            text-align: center
+            justify-content: center
+            margin-top: 10px
+        .top-info
+            .avatar
+                min-width: 68px
+                height: 68px
+                img
+                    top: 5px
+            .title
+                padding-left: 10px
+                font-size: 24px
+                line-height: 30px
+        .price
+            margin-top: 17px
+            font-size: 43px
+            line-height: 55px
+            .duration
+                font-size: 17px
+                line-height: 20px
+                margin-left: 5px
+        .pros-item
+            margin-bottom: 18px
+            .item-title
+                font-size: 16px
+                line-height: 19px
+    .why-us-sect
+        padding-top: 57px
+        padding-bottom: 45px
+        .number
+            margin-top: 16px
+            font-size: 77px
+            line-height: 94px
+        .number-info
+            text-transform: capitalize
+            font-size: 18px
+            line-height: 23px
+        h2
+            font-size: 36px
+            line-height: 44px
+            margin-top: 36px
+        .items-wrap
+            margin-top: 22px
+            .item
+                width: 100%
+                padding: 32px
+                margin-bottom: 24px
+                min-height: 232px
+                .title
+                    font-size: 16px
+                    line-height: 20px
+                    margin-top: 12px
+                    margin-bottom: 15px
+                p
+                    font-size: 14px
+                    line-height: 24px
+                &.green-item
+                    text-align: center
+                    padding: 35px 20px 20px
+                    .title
+                        font-size: 26px
+                        line-height: 23px
+                        margin-bottom: 22px
+                    p
+                        font-size: 17px
+                        line-height: 24px
+                        padding: 0 20px
+                        br
+                            display: none
+                    .btn
+                        max-width: 190px
+                        min-height: 48px
+                        margin: 22px auto 0
+                        font-size: 14px
+                        line-height: 18px
+    .contact-sect
+        padding-top: 56px
+        padding-bottom: 32px
+        h2
+            margin-top: 12px
+            margin-bottom: 25px
+        .descr
+            padding-left: 0
+            padding-bottom: 32px
+            p
+                font-size: 16px
+                line-height: 24px
+                padding-right: 10px
+                br
+                    display: none
+    .contact-form
+        padding-top: 2px
+        .form-group
+            max-width: unset
+            margin-bottom: 29px
+            label
+                top: -13px
+                left: 21px
+                font-size: 12px
+                line-height: 30px
+                max-height: 15px
+            .form-control
+                min-height: 48px
+                width: 100%
+                font-size: 14px
+                line-height: 24px
+                padding: 5px 20px 0
+            textarea.form-control
+                min-height: 128px
+                padding: 15px 20px
+        .btn-default
+            min-height: 48px
+            font-size: 14px
+            line-height: 18px
+            margin-top: -5px
+    .main-footer
+        margin-top: 20px
+        padding-top: 45px
+        padding-bottom: 43px
+        text-align: center
+        .copyright
+            font-size: 14px
+            line-height: 18px
+            margin-top: 35px
+        h2
+            font-size: 36px
+            line-height: 44px
+            margin-bottom: 24px
+        .sign-up-form
+            max-width: unset
+            margin: 0 auto 30px
+            padding-left: 0
+            .form-control
+                min-height: 48px
+                font-size: 14px
+                line-height: 24px
+                padding-left: 20px
+                padding-right: 20px
+            button
+                font-size: 14px
+                line-height: 18px
+                right: 15px
+                top: 15px
+                svg
+                    margin-left: 12px
+    .grow-up
+        padding-top: 430px
+        text-align: center
+        .container
+            max-width: 92%
+            margin: 0 auto
+            padding-bottom: 44px
+            h2
+                margin-top: -20px
+                margin-bottom: 0
+                text-align: center
+        .btn-default
+            margin-top: 24px
+            min-height: 48px
+            text-align: center
+            font-size: 14px
+            line-height: 18px
+            margin-left: auto!important
+            margin-right: auto!important
+    .grow-up .mobile-img
+        left: 0
+        position: relative
+        top: -50px
+        right: 0
+        margin: -400px auto 0
+        text-align: center
+        img
+            max-width: 350px
+            margin-left: -20px
+
+@media screen and (max-width:649px)
+    .main-img iframe
+        top: 0
+
+@media screen and (max-width:500px)
+    .demo-sect
+        .container
+        p 
+            max-width: 181px
+    .demo-sect .main-img
+        margin: 215px -15px 0
+        &:before
+            right: -132px
+            top: -304px
+            background-size: 175px
+
+@media screen and (max-width:374px)
+    header
+        .row
+            flex-wrap: nowrap
+    .v-pills-save-time
+    	background-size: 50rem
+    .v-pills-get-paid
+    	background-size: 50rem
+    .v-pills-more-efficient
+    	background-size: 50rem
+    .v-pills-win-quotes
+    	background-size: 50rem
+    .v-pills-customers
+    	background-size: 50rem
+    .v-pills-pocket
+    	background-size: 50rem
+
+
+@media screen and (min-width:767px)
+    .hidden-md
+        display: none
+
+@media screen and (max-height:750px)
+    .top-nav .main-nav
+        top: 0
+
+@media screen and (max-height:600px)
+    .top-nav
+        padding-bottom: 10px
+        .main-nav
+            a:last-of-type
+                margin-bottom: 0
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

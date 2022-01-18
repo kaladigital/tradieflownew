@@ -1,0 +1,3479 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: $grayD
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html 
+	font-size: 10px	
+	line-height: 10px
+
+body
+	font-size: 10px
+	min-width: 320px
+	position: relative
+	line-height: 10px
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background-color: $light-white
+	input, textarea
+		border: none
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+*::-webkit-scrollbar-track
+	border-radius: 4px
+	background: transparent
+
+*::-webkit-scrollbar
+	width: 3px
+	background: transparent
+
+*::-webkit-scrollbar-thumb
+	border-radius: 4px
+	width: 3px
+	background: rgba(134, 150, 158, 0.4)
+
+	
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a 
+	text-decoration: none!important	
+
+button 
+	box-shadow: none
+	border: none
+	outline: none
+
+input::placeholder		
+	color: $grayD
+
+.flex	
+	display: flex
+
+.flex-end
+	align-items: flex-end!important	
+
+.flex-s-b
+	justify-content: space-between	
+
+.flex-v-center	
+	align-items: center
+
+.v-m
+	vertical-align: middle	
+
+.blue-light
+	color: $blue-light!important
+
+.blue
+	color: $blue!important	
+
+.green
+	color: $green!important	
+
+.gray 
+	color: $grayD!important
+
+.pink
+	color: $red!important	
+
+.dark
+	color: $dark!important	
+
+.orange
+	color: $orange-light!important		
+//in call section
+.in-call-block
+	background-color: $black
+	padding: 2.5rem 3.6em
+	.row 
+		align-items: center
+	.name 
+		color: $white
+		font-size: 2.5rem
+		line-height: 3.2rem
+	.call-duration
+		margin-top: .4rem
+		color: $grayD
+		font-size: 1.7rem
+		line-height: 2.2rem	
+	.call-control
+		display: flex
+		justify-content: flex-end
+		padding-top: .5rem
+		.mute 
+			background-color: $green
+			// width: 4.4rem
+			// height: 4.4rem
+			min-width: 44px
+			height: 44px
+			border-radius: 10rem
+			display: flex
+			align-items: center
+			justify-content: center		
+		.cancel-call
+			margin-left: 3.2rem
+			background-color: $red
+			min-width: 44px
+			height: 44px
+			border-radius: 10rem
+			display: flex
+			align-items: center
+			justify-content: center	
+
+//header
+.main-head
+	padding-top: 2rem
+	min-height: 11.2rem
+
+.form-group
+	overflow: hidden
+	position: relative
+	.form-control 
+		border: none 
+		min-height: 4.8rem
+		width: 100%
+		max-width: 66rem
+		padding: .5rem 5rem	0
+		background-color: #fff
+		// border-radius: 10rem	
+		font-size: 1.4rem
+		line-height: 1.8rem
+		color: $grayD		
+		outline: none!important
+		box-shadow: none
+		
+
+.search-form
+	margin-top: 1rem
+	margin-left: 6rem	
+	max-width: 66rem
+	width: 100%	
+	position: relative
+	.btn
+		position: absolute
+		left: 1rem
+		top: 1.2rem	
+	.form-group
+		border-radius: 10rem	
+	.form-control
+		padding-top: .2rem
+		&::placeholder
+			color: $grayD	
+
+.dark-placeholder
+	.form-control
+		&::placeholder
+			color: $dark!important		
+
+.menu-toggle
+	display: inline-block
+	margin-left: -2rem	
+
+.logo 
+	display: block
+	margin-top: 2rem	
+	margin-left: -1rem
+	
+.user-control
+	padding-top: 1rem	
+	padding-left: .2rem
+	a 
+		display: inline-block
+		vertical-align: top
+	.user-avatar
+		border-radius: 10rem 
+		margin-left: 3.2rem	
+		overflow: hidden
+
+.icon-nav
+	text-align: center
+	padding-right: 2rem
+	padding-top: 6.2rem
+	.nav-link
+		margin-bottom: 5rem
+		transition: all .3s ease
+		svg 
+			path 
+				fill: $grayD
+		&.active, &:hover, &:active
+			background-color: transparent!important	
+			svg 
+				path 
+					fill: $green
+
+// main
+.content
+	background-color: $white
+	border-radius: 7rem
+	padding: 7rem 5rem 
+	margin-right: 3.5rem
+	margin-left: -3.8rem
+	position: relative
+	min-height: 80vh
+
+h2		
+	font-size: 2.6rem
+	line-height: 3.3rem
+	font-family: "VisueltPro-Bold", sans-serif
+	color: $dark
+	display: inline-block
+
+h3 
+	font-size: 2rem 
+	line-height: 2.4rem
+	color: $dark	
+	margin-bottom: 1.6rem
+
+h4
+	font-size: 1.6rem 
+	line-height: 2rem 
+	color: $dark
+	margin-bottom: .4rem	
+
+.widget
+	margin-top: 3.2rem
+	background-color: $white
+	border-radius: 2rem
+	box-shadow: 0px 3px 9px 2px rgba(229, 229, 229, 0.4)
+	overflow: hidden	
+	padding: 3.2rem
+	position: relative
+
+.widget-title
+	color: $dark
+	font-size: 1.6rem
+	line-height: 2.1rem
+	font-family: "VisueltPro-Regular", sans-serif
+	margin-bottom: 1.4rem
+
+.widget-small-title
+	margin-top: 3.2rem
+	font-family: "VisueltPro-Bold", sans-serif
+	font-weight: 700
+	color: $dark
+	font-size: 1.4rem 
+	text-transform: uppercase
+	margin-bottom: .8rem
+	line-height: 1.8rem 
+	letter-spacing: -0.08px
+
+
+.user-info
+	display: flex
+	justify-content: flex-start
+	flex-wrap: wrap
+	.item 
+		margin-top: 2.5rem
+		display: flex
+		align-items: center
+		// max-width: 27.4rem
+		max-width: 23%
+		margin-right: 2.6%
+		min-height: 11.3rem
+		width: 100%
+		padding: 0rem 0 0 2.4rem 
+		background-color: $white
+		border-radius: 2rem
+		box-shadow: 0px 3px 9px 2px rgba(229, 229, 229, 0.4)
+		overflow: hidden
+		&:nth-of-type(4n)
+			margin-right: 0
+		&.completed-item
+			padding-left: .7rem
+			picture
+				margin-right: 0
+			.value 
+				position: relative
+				top: -1rem	
+		.circle
+			margin-right: 1.2rem
+			border-radius: 100%
+			background-color: transparent	
+			text-align: center
+			display: flex
+			align-items: center
+			justify-content: center
+			position: relative
+			&.green-circle
+				span
+					color: $dark
+			span 
+				position: absolute
+				left: 0
+				right: 0
+				margin: 0 auto
+				top: 1.5rem
+				display: inline-block
+				color: $white
+				font-size: 1.8rem 
+				line-height: 2rem
+				small
+					font-size: 1.2rem
+		&.pink-item
+			background-color: $red
+			.subtitle
+				color: $white
+			.title
+				color: $white	
+				small 
+					opacity: .8
+		picture
+			display: inline-block
+			margin-right: 1.2rem
+		.value 
+			display: inline-block	
+			position: relative
+			top: -.5rem	
+		.subtitle
+			text-transform: uppercase
+			color: $grayD
+			font-size: 1.3rem
+			line-height: 1.7rem
+			margin-bottom: .4rem
+		.title
+			color: $dark
+			font-size: 2.9rem
+			line-height: 1.7rem	
+			margin-top: 1.5rem
+			font-family: "VisueltPro-Regular", sans-serif
+			small 
+				font-size: 1.7rem
+				line-height: 2.1rem
+
+.history
+	.day, .view-all
+		display: inline-block
+		background-color: $light-white
+		font-family: "VisueltPro-Regular", sans-serif
+		color: $dark
+		border-radius: 2.3rem
+		text-align: center
+		font-size: 1.2rem
+		line-height: 1.6rem
+		padding: .4rem 0
+		min-width: 5.2rem
+	.view-all
+		color: $blue
+	.item
+		position: relative
+		margin-bottom: 1.5rem
+		display: flex
+		align-items: center
+		&:after 
+			position: absolute
+			content: ''	
+			width: .2rem
+			height: 1.5rem
+			background-color: $light-white
+			left: 2.5rem
+			right: auto
+			margin: 0 auto 
+			bottom: -1.5rem	
+			display: block		
+		picture
+			display: inline-block
+			border: .2rem solid $light-white	
+			border-radius: 10rem
+			padding: 1.1rem	
+			margin-right: 1.2rem	
+		.type
+			color: $dark
+			font-size: 1.4rem
+			line-height: 1.8rem	
+			font-family: "VisueltPro-Regular", sans-serif
+			.time
+				display: inline-block
+				margin-left: .3rem
+				color: $grayD
+				font-size: 1.2rem
+				line-height: 1.5rem
+				font-family: "VisueltPro-Regular", sans-serif
+		.info 
+			color: $blue
+			font-size: 1.4rem
+			line-height: 1.8rem		
+			margin-top: .2rem
+			&.miss
+				color: $grayD
+
+.quick-actions
+	.item	
+		border: .1rem solid $grayD
+		box-sizing: border-box
+		border-radius: 2rem
+		min-height: 10rem
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		margin-bottom: 1.6rem
+		// flex-wrap: wrap
+		padding-left: 2.8rem
+		padding-right: .5rem
+		&:last-of-type
+			margin-bottom: 0
+		picture 
+			display: inline-block
+			margin-right: 1.2rem
+			min-width: 3.6rem
+		.title
+			color: $grayD
+			// max-width: 10.6rem
+			font-size: 1.6rem
+			line-height: 2rem
+			font-family: "VisueltPro-Regular", sans-serif
+		&.send-invoice-text, &.send-invoice-email
+			background: rgba(251, 39, 93, 0.1)
+			border: .1rem solid $red
+			.title		
+				color: $red				
+		&.work-progress
+			background: $white
+			border: .1rem solid $blue
+			padding-left: 2.2rem
+			picture
+				margin-right: .8rem
+			.title		
+				color: $blue							
+		&.not-lead
+			background: $white
+			border: .1rem solid $red
+			padding-left: 2.2rem
+			picture
+				margin-right: .8rem
+			.title		
+				color: $red		
+		&.new-project	
+			background: $white
+			border: .1rem solid $blue
+			padding-left: .6rem
+			picture 
+				margin-right: .4rem
+			.title		
+				color: $blue					
+		&.payment-received	
+			background: $white
+			border: .1rem solid $green
+			padding-left: 1.4rem
+			picture 
+				margin-right: .2rem
+			.title		
+				color: $green	
+		&.payment-not-received
+			padding-left: 1.2rem								
+		&.lead-became	
+			background: $white
+			border: .1rem solid $green
+			padding-left: 2.2rem
+			picture
+				margin-right: .8rem
+			.title		
+				color: $green			
+		&.add-event
+			background: rgba(248, 99, 45, 0.1)
+			border: .1rem solid $orange-light
+			.title		
+				color: $orange-light				
+		&.send-message	
+			background: rgba(57, 98, 250, 0.1)
+			border: .1rem solid $blue
+			.title		
+				color: $blue
+		&.set-reminder	
+			background: rgba(22, 189, 200, 0.1)
+			border: .1rem solid $blue-light
+			.title		
+				color: $blue-light	
+		&.send-quote
+			background: rgba(67, 209, 79, 0.1)
+			border: .1rem solid $green
+			.title		
+				color: $green				
+
+.form-group-title
+	color: $dark
+	text-transform: uppercase
+	font-family: "VisueltPro-Bold", sans-serif	
+	font-weight: 700
+	font-size: 1.4rem
+	line-height: 1.8rem
+	letter-spacing: -0.08px
+	display: block
+	width: 100%
+
+.lead-widget, .work-in-progress-widget
+	position: relative
+	top: -.5rem	
+
+.form-progress.progress
+	width: 100%
+	background-color: $light-white
+	border-radius: .5rem
+	height: .5rem
+	margin-top: 4rem
+	overflow: visible
+	&.inline-progress
+		height: .3rem
+		margin-top: .5rem
+		max-width: 100%
+		position: relative
+		margin-bottom: 2.2rem
+		margin-right: 30px
+		width: auto
+		.progress-bar
+			height: .3rem
+			&:before 
+				display: none
+		.current-val
+			position: absolute
+			background-color: transparent 
+			color: $dark
+			font-size: 1.2rem 
+			line-height: 1.4rem
+			top: -4px
+			right: -37px
+			font-family: "VisueltPro-Regular", sans-serif	
+			padding: 0
+			&::after
+				display: none			
+	.progress-bar
+		background-color: $green
+		position: relative
+		overflow: visible
+		height: .5rem
+		&:before 
+			content: ''
+			position: absolute
+			right: 0
+			top: -.3rem
+			z-index: 99
+			background-color: $green
+			border: 2px solid $white 
+			border-radius: 100%
+			width: 1rem
+			height: 1rem
+	.current-val
+		position: absolute
+		right: -1.5rem
+		min-width: 4rem
+		top: -2.8rem
+		padding-top: .3rem
+		max-height: 2.1rem
+		font-size: 1.4rem
+		color: $white
+		line-height: 2rem
+		background-color: $green
+		border-radius: 	20px
+		display: flex	
+		justify-content: center
+		align-items: center
+		&:after 
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			right: 0
+			width: 0
+			height: 0
+			margin: 0 auto
+			bottom: -3px
+			border-style: solid
+			border-width: 3px 2px 0 2px
+			border-color: $green transparent transparent transparent
+
+.progress-val
+	display: flex
+	justify-content: space-between
+	width: 100%
+	color: $grayD
+	font-size: 1.3rem
+	line-height: 1.4rem
+	margin-top: .7rem
+
+.data-form
+	.btn-default
+		margin-top: 1.2rem
+	.form-row
+		margin-bottom: 1rem
+		align-items: flex-start
+		> div
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			align-items: flex-start
+		> div:nth-of-type(1)
+			padding-right: 1.6rem
+		> div:nth-of-type(2)
+			padding-left: 1.6rem			
+	.form-group
+		border: 1px solid rgba(134,150,158,.3)
+		border-radius: .8rem
+		background-color: $white
+		padding: .6rem 1.6rem
+		max-height: 5.4rem
+		display: block
+		width: 100%
+		margin-top: .8rem
+		margin-bottom: 0
+		&.inline-group
+			display: inline-block
+			max-width: 48%
+		&.no-label
+			padding: 1rem 1.6rem	
+		label 
+			margin: 0
+			color: $grayD
+			font-size: 1.3rem
+			line-height: 1.6rem	
+			margin-bottom: -.5rem
+			display: block
+			position: relative
+		.form-control
+			padding: 0
+			min-height: unset	
+			color: $dark
+			font-size: 1.6rem
+			line-height: 2rem
+			&::placeholder
+				color: $grayD
+
+.custom-select
+	padding-left: 2rem	
+	appearance: none
+	background-image: url('../img/_src/svg/arrow-bottom.svg')
+	background-repeat: no-repeat
+	background-position: 98% 14px		
+
+body 				
+	.form-group			
+		&.stage-field
+			&:before 
+				content: ''
+				width: 1.2rem
+				height: 1.2rem
+				background-color: transparent
+				border-radius: 10rem
+				position: absolute
+				display: block
+				left: 1.5rem
+				bottom: 1.3rem	
+			.form-control
+				padding-left: 2rem	
+				appearance: none
+				background-image: url('../img/_src/svg/arrow-bottom.svg')
+				background-repeat: no-repeat
+				background-position: 98% 14px
+				&.gray 
+					padding-left: 1rem
+		&.not-listed 
+			&:before 
+				background-color: $orange-light						
+		&.follow-up
+			&:before 
+				background-color: $purplue					
+		&.lead-stage	
+			&:before 
+				background-color: $blue-light	
+		&.quote-meeting							
+			&:before 
+				background-color: $red
+		&.work-in-progress						
+			&:before 
+				background-color: $blue		
+		&.cancelled						
+			&:before 
+				background-color: $grayD							
+.scroll-widget
+	max-height: 27.5rem	
+
+.scroll-area
+	margin-top: 3.5rem
+	overflow-y: scroll
+	max-height: 19rem
+	padding-right: 1.6rem
+	margin-right: -1.6rem
+	.item 
+		display: flex
+		padding-bottom: 1rem
+		margin-bottom: 1.3rem
+		border-bottom: 1px solid $light-white
+	.time
+		color: $grayD
+		font-size: 1.4rem
+		line-height: 1.8rem
+		min-width: 7rem
+		margin-right: .2rem
+	p 
+		color: $dark
+		font-size: 1.4rem
+		line-height: 1.8rem
+		font-weight: 400	
+		margin: 0
+	.name
+		font-size: 1.4rem
+		line-height: 1.8rem
+		font-family: "VisueltPro-Regular", sans-serif	
+		color: $dark
+		min-width: 1.2rem	
+		margin-right: 5.6rem
+	.custom-checkbox
+		input 
+			display: none
+		label 
+			font-size: 1.6rem	
+			line-height: 2rem
+			font-family: "VisueltPro-Regular", sans-serif
+			color: $dark
+			display: block
+			margin-bottom: .4rem
+
+.custom-control	
+	label 
+		padding-top: .2rem
+		padding-left: .8rem
+
+.custom-control-label::after,
+.custom-control-label::before
+	width: 1.6rem
+	height: 1.6rem
+
+.custom-control-input:checked~.custom-control-label::before
+	background-color: $green
+	border-color: $green
+
+.widget.tasks	
+	.scroll-area
+		margin-left: -1.6rem
+		padding-left: 1.6rem
+	.item 
+		padding: 1.4rem	 1.7rem	1.2rem
+		margin-bottom: 1.1rem	
+		flex-wrap: wrap
+		box-shadow: -1px 0px 10px rgba(134, 150, 158, 0.2)
+		border-radius: .7rem
+		p 
+			width: 100%
+			padding-left: 2.4rem
+
+.widget.emails
+	.time 
+		text-align: right
+		min-width: 4.4rem
+		margin-right: 0
+	p 
+		max-width: 59rem
+		color: $grayD
+		span 
+			color: $dark
+			font-family: "VisueltPro-Regular", sans-serif	
+
+.lead-information
+	flex-wrap: wrap
+	// justify-content: space-between
+	.widget-title
+		width: 100%
+	.items-wrap
+		display: flex
+		flex-wrap: wrap
+		width: 100%	
+	.item
+		width: 100%
+		margin-bottom: 2.1rem
+		max-width: 32%
+		margin-right: 2%
+		min-height: 8.8rem
+		border: 1px solid rgba(134, 150, 158, 0.3)
+		border-radius: .4rem
+		align-items: center
+		padding-left: 1.6rem
+		&:nth-child(3n)
+			margin-right: 0
+		picture	
+			display: block
+			margin-right: .9rem
+		.name
+			display: block
+			text-transform: uppercase
+			color: $grayD
+			font-size: 1.4rem
+			line-height: 1.8rem
+		.title
+			color: $dark
+			font-size: 1.4rem
+			line-height: 1.8rem	
+			font-family: "VisueltPro-Regular", sans-serif			
+
+.scroll-x-block	
+	&::-webkit-scrollbar-track
+		border-radius: 10px
+		background: transparent
+		height: 3px
+	&::-webkit-scrollbar
+		width: 3px
+		background: transparent
+		height: 3px
+	&::-webkit-scrollbar-thumb
+		border-radius: 10px
+		background: rgba(134, 150, 158, 0.4)
+		height: 3px
+
+.drop-list
+	box-shadow: -1px 0px 10px rgba(134, 150, 158, 0.2)
+	border-radius: 4px
+	padding: 0
+	border: none
+	.dropdown-item
+		font-size: 1.4rem 
+		color: $grayD
+		padding: .8rem 1.2rem
+		transition: all .3s ease 
+		&:hover, &:active 
+			background-color: $light-white
+
+.content .table-wrap
+	margin-top: 2.5rem
+	box-shadow: 0px 3px 9px 2px rgba(229, 229, 229, 0.4)
+	background-color: #fff
+	border-radius: 2rem
+	padding: 0 3.2rem
+	&::-webkit-scrollbar-track
+		border-radius: 10px
+		background: transparent
+		height: 3px
+	&::-webkit-scrollbar
+		width: 3px
+		background: transparent
+		height: 3px
+	&::-webkit-scrollbar-thumb
+		border-radius: 10px
+		background: rgba(134, 150, 158, 0.4)
+		height: 3px
+	.col-more
+		max-width: 50px	
+		text-align: right
+	td:last-of-type 
+		max-width: 50px
+		text-align: right
+	th 
+		height: 6.6rem
+		vertical-align: middle
+		border-top: 0
+		border-bottom: 2px solid $light-white	
+		text-transform: uppercase
+		color: $grayD 
+		font-size: 1.3rem 
+		line-height: 1.6rem 
+		font-weight: 400
+		font-family: "VisueltPro-Regular", sans-serif
+		.btn 
+			display: inline-block
+			padding: 0
+			vertical-align: middle
+			margin-left: 2px
+			&:hover 
+				opacity: 1
+				svg 
+					path
+						opacity: 1
+						fill: $green
+	.custom-checkbox
+		display: inline-block
+		vertical-align: middle
+		label 
+			padding-top: .2rem	
+			&:before, &:after 
+				top: 1px
+	td 
+		height: 6.6rem
+		border-top: 0
+		border-bottom: 2px solid $light-white	
+		color: $grayD 
+		font-size: 1.4rem 
+		line-height: 1.8rem
+		vertical-align: middle
+		&.strong 
+			color: $dark		
+			font-family: "VisueltPro-Regular", sans-serif
+
+
+
+.data-form .form-group.status-field, .select2-selection__rendered
+	max-height: 26px
+	min-height: unset
+	display: inline-block
+	padding: 0
+	margin: 0
+	width: auto
+	border: none
+	border-radius: 34px
+	background: rgba(248, 99, 45, 0.2)
+	&.completed, .select2-selection__rendered[title="Completed"] 
+		background: rgba(67, 209, 79, 0.2)
+		.form-control 
+			color: $green
+		svg, + .select2-selection__arrow svg  
+			path 
+				fill: $green
+	&.quote-meeting, .select2-selection__rendered[title="Quote Meeting"], .select2-selection__rendered[title="Meeting Scheduled"] 
+		background: rgba(251, 39, 93, 0.2)
+		.form-control 
+			color: $pink
+		svg, + .select2-selection__arrow svg  
+			path 
+				fill: $pink		
+	&.work-in-progress, .select2-selection__rendered[title="Work in Progress"] 
+		background: rgba(57, 98, 250, 0.2)
+		.form-control 
+			color: $blue
+		svg , + .select2-selection__arrow svg 
+			path 
+				fill: $blue	
+	&.cancelled, .select2-selection__rendered[title="Cancelled"] 
+		background: rgba(134, 150, 158, 0.2)
+		.form-control 
+			color: $grayD
+		svg, + .select2-selection__arrow svg 
+			path 
+				fill: $grayD	
+	&.lead-stage, .select2-selection__rendered[title="Lead"]  
+		background: rgba(22, 189, 200, 0.2)
+		.form-control 
+			color: $blue-light
+		svg, + .select2-selection__arrow svg  
+			path 
+				fill: $blue-light													
+	.form-control 
+		background-image: none
+		width: auto
+		padding-left: 16px
+		padding-right: 30px
+		background-color: transparent
+		max-height: 26px
+		color: $orange-light
+		font-size: 1.4rem
+		line-height: 1.8rem
+		font-family: "VisueltPro-Regular", sans-serif
+		option
+			color: $dark!important
+	&:before 
+		display: none	
+	svg 
+		position: absolute
+		top: 9px 
+		right: 15px
+		path 
+			fill: $orange-light	
+
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__arrow
+	position: static
+
+.phone-link, .btn-play
+	background: rgba(67, 209, 79, 0.2)
+	display: inline-block
+	width: 28px
+	height: 28px
+	text-align: center
+	line-height: 28px
+	border-radius: 5px
+	margin-right: 10px
+	padding: 0
+.google-drive-link
+	display: inline-block	
+.btn.btn-play
+	border-radius: 100%
+	img 
+		position: relative
+		right: -1px
+		top: -2px
+
+.table-filters
+	display: flex
+	justify-content: flex-end 
+	align-items: center		
+	.btn-all
+		margin-right: -.8rem
+	.btn 
+		margin-left: 1.6rem	
+		border-radius: 1rem
+	.btn-add
+		min-width: 11.8rem
+		max-height: 3.4rem	
+	.btn-text
+		color: $grayD 
+		font-size: 1.4rem 
+		line-height: 1.8rem	
+		border-radius: 0
+	.btn-show-filter
+		min-width: 10.2rem
+		min-height: 3.4rem
+		color: $dark 
+		font-size: 1.4rem 
+		line-height: 1.8rem
+		font-family: "VisueltPro-Regular", sans-serif
+		img 
+			margin-right: 1.2rem
+	.dropdown
+		margin-left: 2.2rem 
+	.btn.dropdown-toggle, .btn-show-filter
+		border: 1px solid $light-white
+		border-radius: 10px	
+	.dropdown-menu	
+		border: 1px solid $light-white
+		a 
+			text-align: center
+			border-radius: 10px
+			background-repeat: no-repeat
+			background-position: 17px
+		a[data-view="funnel"] 
+			background-image: url(../img/_src/svg/funnel-icon.svg)	
+		a[data-view="list"] 
+			background-image: url(../img/_src/svg/list-icon.svg)			
+
+
+.funnel-wrap
+	margin-top: 2.5rem	
+	box-shadow: 0px 3px 9px 2px rgba(229, 229, 229, 0.4)
+	background-color: #fff
+	border-radius: 2rem
+	padding: 0	
+	display: none
+	.funnel-head
+		display: flex
+		justify-content: space-between
+		.head-item
+			min-height: 6.3rem 
+			width: 100%
+			max-width: 16.66%
+			text-transform: uppercase
+			color: $dark 
+			font-size: 1.3rem
+			line-height: 1.7rem
+			text-align: center
+			background-color: $lighter-white
+			border-right: 2px solid $light-white
+			display: flex
+			align-items: center
+			justify-content: center
+			&:last-of-type
+				border-color: transparent
+			&.cancelled
+				&:before 
+					background-color: $grayD			
+			&.job-completed
+				&:before 
+					background-color: $green				
+			&.work-in-progress
+				&:before 
+					background-color: $blue				
+			&.quote-meeting
+				&:before 
+					background-color: $pink			
+			&.leads
+				&:before 
+					background-color: $blue-light
+			&:before 
+				content: ''
+				width: 1rem
+				height: 1rem
+				background-color: $orange-light
+				position: relative
+				top: -2px
+				margin-right: 4px
+				display: inline-block
+				vertical-align: middle
+				border-radius: 100%
+	.funnel-body
+		display: flex
+		justify-content: space-between
+		align-items: stretch	
+		.funnel-column
+			padding: 2rem .8rem 
+			width: 100%
+			max-width: 16.66%	
+			border-top: 2px solid $light-white	
+			border-right: 2px solid $light-white	
+			&:last-of-type
+				border-right: 2px solid transparent					
+		.funnel-item
+			box-shadow: -1px 0px 10px rgba(134, 150, 158, 0.2)
+			border: 1px solid rgba(134, 150, 158, 0.2)
+			border-radius: 7px 
+			padding: 1.6rem .8rem
+			position: relative
+			margin-bottom: 1.2rem
+			.title
+				font-size: 1.4rem
+				line-height: 1.6rem
+				color: $dark
+				font-family: "VisueltPro-Bold", sans-serif
+				font-weight: 700
+				margin-bottom: .6rem
+			.value
+				font-size: 1.2rem 
+				line-height: 1.4rem 
+				font-weight: 400
+				color: $dark
+			.funnel-info
+				position: relative
+				padding-right: 7px	
+			.btn-more	
+				position: absolute
+				right: 0
+				top: 0
+				padding: 0
+
+.history-call
+	.widget-title
+		display: inline-block
+
+.profile-history	
+	.date
+		font-size: 1.3rem 
+		line-height: 1.6rem 
+		color: $grayD 
+		margin-bottom: .6rem 
+	.time 
+		font-size: 1.4rem 
+		line-height: 1.8rem 
+		color: $dark
+		b 
+			vertical-align: middle
+			display: inline-block
+			margin-left: .4rem 
+			font-size: 1.5rem 
+			line-height: 1.9rem 
+			font-family: "VisueltPro-Bold", sans-serif
+			font-weight: 700
+
+.recording-wrap
+	background-color: $light-white
+	border-radius: 10px 
+	min-height: 60px	
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	width: 100%
+	margin-bottom: 3.2rem
+
+.recording-info		
+	display: none
+	justify-content: space-between
+	align-items: center 
+	padding: 0 1.6rem
+	width: 100%
+	&.active 
+		display: flex
+	.view 
+		span 
+			color: $dark 
+			font-size: 1.6rem 
+			line-height: 2rem 
+			font-family: "VisueltPro-Regular", sans-serif
+			display: inline-block
+			margin-right: 1.2rem
+
+
+	.title
+		font-family: "VisueltPro-Bold", sans-serif
+		font-size: 1.4rem 
+		line-height: 1.8rem 
+		font-weight: 700
+		margin-bottom: .2rem
+		color: $dark	
+	.source 
+		color: $grayD 
+		font-size: 1.4rem 
+		line-height: 1.8rem 
+
+.widget.search-contact
+	padding-top: 2.2rem 
+	.throw-line	
+		margin-top: 1.6rem
+		margin-bottom: 1.6rem 	
+
+.contact-search-form
+	margin-left: 0
+	.form-group 
+		border-radius: 8px
+		border: 1px solid rgba(134,150,158,.3)
+		.form-control
+			min-height: 4.6rem
+			padding-left: 4rem
+			padding-right: 4rem
+			color: $grayD
+	.btn
+		top: 1.4rem
+		left: .7rem		
+
+.users-list
+	margin-top: 1.2rem
+	ul 
+		top: 0!important
+		padding: 0
+		max-height: 29rem
+		padding-right: 1.5rem
+		margin-right: -1.5rem
+		overflow-y: auto
+		li 
+			list-style-type: none	
+			
+body 			
+	.users-list .ui-menu-item, .profile-info
+		margin-bottom: .8rem
+		border: 1px solid rgba(134, 150, 158, 0.3)
+		box-sizing: border-box
+		border-radius: 8px
+		display: flex
+		justify-content: space-between	
+		color: $grayD
+		font-size: 1.5rem 
+		line-height: 1.8rem 	
+		width: 100%
+		padding: 1.6rem	
+		align-items: center
+		.call-btn
+			position: static
+			line-height: 4.5rem		
+		.title
+			font-size: 2.2rem 
+			line-height: 2.8rem 
+			color: $dark
+			font-weight: 700
+			font-family: "VisueltPro-Bold", sans-serif
+			margin-bottom: .6rem
+		.value
+			color: $grayD
+			font-size: 1.5rem 
+			line-height: 1.8rem 
+			display: inline-block
+			vertical-align: middle
+		.desc
+			margin-left: .1rem
+			display: inline-block
+			vertical-align: middle
+			font-size: 1.5rem 
+			line-height: 1.8rem 
+			color: $blue-light
+			font-family: "VisueltPro-Regular", sans-serif
+
+body .profile-info.no-r-b
+	margin-bottom: 0
+	border-bottom-left-radius: 0!important
+	border-bottom-right-radius: 0!important
+
+.profile-action
+	display: flex
+	justify-content: center
+	padding-top: 1.6rem
+	padding-bottom: 1.6rem
+	border: 1px solid $light-white
+	border-bottom-left-radius: 20px
+	border-bottom-right-radius: 20px
+	a 
+		width: 25%
+		border-right: 1px solid rgba(134,150,158,.2)
+		text-align: center
+		img 
+			display: block
+			text-align: center
+			margin: .4rem auto 
+		span 
+			color: $grayD 
+			font-size: 1.2rem 
+			line-height: 1.5rem 	
+		&:last-of-type
+			border-color: transparent
+.content  .profile-info 
+	background-color: $light-white		
+	padding: 3.2rem
+	border-color: transparent		
+
+.btns-wrap 
+	max-width: 28.3rem 
+	padding: 2px
+	border: 1px solid $light-white
+	border-radius: 10px
+	margin-left: 1.6rem
+	display: flex
+	align-items: center 
+	justify-content: space-between
+	.btn
+		min-width: 8.7rem 
+		min-height: 2.8rem
+		margin: 0
+		// padding-left: 1.3rem
+		// padding-right: 1.3rem	
+		outline: none!important 
+		box-shadow: unset 
+		border: none
+		border-radius: 10px	
+	.btn-bd-left
+		border-left: 1px solid $light-white			
+
+.dropdown-item:focus, .dropdown-item:hover
+	background-color: transparent
+
+.btn:hover, .btn:focus 
+	box-shadow: unset!important 
+	outline: none 		
+
+.form-group.dial-code
+	position: relative
+	.form-control
+		min-height: 8.4rem 
+		width: 100%	
+		color: $green 
+		font-size: 3.4rem 
+		line-height: 3.4rem 
+		padding: 0
+		text-align: center
+		border: 1px solid rgba(134,150,158,.3)
+		border-radius: 8px
+		&::placeholder
+			color: $grayD
+	label 
+		color: $grayD
+		font-size: 1.4rem 
+		line-height: 1.8rem 
+		position: absolute	
+		text-align: center
+		left: 0
+		right: 0
+		margin: 0 auto 		
+		bottom: .5rem
+
+.control-area
+	margin-top: 2.8rem
+	box-shadow: 0px 3px 9px 2px rgba(229, 229, 229, 0.4)
+	border-radius: 12px
+	min-height: 8.2rem
+	display: flex
+	justify-content: center
+	align-items: center 
+	.call-btn 
+		box-shadow: 0px 3px 9px 2px rgba(67, 209, 79, 0.3)
+		width: 6rem 
+		height: 6rem
+		margin: 0 4.5rem
+		img 
+			width: 20px 
+.number-area
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	max-width: 31rem
+	flex-wrap: wrap
+	margin: 5.6rem auto 0
+	.number-code
+		margin: 0 1.2rem 1.2rem
+		min-height: 7.5rem 
+		padding-top: .6rem
+		background-color: transparent	
+		width: 25%
+		text-align: center
+		display: flex
+		align-items: flex-start
+		justify-content: center 
+		flex-wrap: wrap
+		border-radius: 5px
+		border: 1px solid transparent
+		transition: all .3s ease
+		&:active, &.active 
+			background: rgba(67, 209, 79, 0.15)
+			border: 1px solid $green
+		&:hover 
+			border: 1px solid $green	
+		&.hash-code 
+			.number
+				font-size: 3rem	
+		&.star-code
+			padding-top: 2.4rem
+			font-weight: 100
+			font-family: "VisueltPro-Light", sans-serif
+			.number
+				font-size: 7rem
+				line-height: 4.8rem
+		.number
+			display: block
+			color: $dark
+			font-size: 4.8rem 
+			line-height: 4.8rem 
+			width: 100%
+		&.bot-code
+			margin-top: -1rem		
+		.letters
+			margin-top: -.4rem
+			color: $grayD
+			font-size: 1.4rem 
+			line-height: 1.4rem 
+			letter-spacing: .1rem
+
+
+.preview-font-wrap
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 3.2rem
+	.preview-font
+		margin-left: 3.2rem
+	.title
+		color: $grayD
+		font-size: 1.3rem 
+		line-height: 1.6rem 
+	.font-change
+		font-size: 1.6rem 
+		line-height: 1.9rem
+		color: $dark
+	.form-group
+		max-width: 34.4rem	
+
+.hour-item
+	display: flex
+	justify-content: space-between
+	max-width: 70.4rem
+	align-items: center
+	border: 1px solid rgba(134,150,158,.3)
+	padding: 1.2rem 1.6rem
+	border-radius: 8px
+	margin-bottom: 1.2rem
+	&.active 
+		.data-form
+			display: flex
+		.day 
+			background-color: rgba(251,39,93,.2)
+			color: $red
+	.custom-switch
+		position: relative
+		top: -.8rem
+		margin-right: 2.8rem
+		padding: 0			
+	.data-form
+		display: none
+		width: 100%
+		justify-content: center 
+		.form-group
+			max-width: 19.2rem 
+			width: 100%
+			margin: 0
+			&:first-of-type
+				margin-right: 2.4rem
+		.form-control
+			max-width: 19.2rem 
+			width: 100%
+	.day
+		padding: 1.6rem 3rem
+		color: $grayD
+		border-radius: 8px
+		text-transform: uppercase
+		background-color: rgba(134,150,158,.1)
+		font-size: 1.6rem 
+		line-height: 2.2rem 
+		font-weight: 700
+		font-family: "VisueltPro-Bold", sans-serif
+	.data-form
+		display: none	
+
+.throw-line			
+	position: relative
+	text-align: center
+	p 
+		display: inline-block
+		margin: 0 
+		font-size: 1.4rem 
+		line-height: 1.8rem 
+		color: $grayD
+		padding: 0 4px
+		background-color: $white 
+		z-index: 20
+		position: relative
+	&:before 
+		content: ''
+		height: 2px
+		width: 100%	
+		top: .6rem 
+		z-index: 10
+		left: 0
+		background-color: $light-white
+		position: absolute	
+
+.call-history-wrap
+	margin-top: 3.5rem	
+.call-history-item
+	display: flex
+	justify-content: space-between
+	align-items: center
+	font-size: 1.4rem 
+	border-bottom: 2px solid $light-white
+	padding-bottom: 2rem 
+	margin-bottom: 2rem
+	.title
+		font-size: 2rem 
+		line-height: 2rem 
+		font-weight: 700
+		font-family: "VisueltPro-Bold", sans-serif
+		margin-bottom: .8rem 
+		color: $dark
+	.value
+		line-height: 1.8rem 
+		color: $grayD
+	picture 
+		display: inline-block
+		margin-right: 1.2rem	
+		vertical-align: top
+	.info 
+		display: inline-block
+	.time
+		display: inline-block	
+		line-height: 2rem 
+		color: $grayD
+		margin-right: 3.2rem			
+
+.nav-tabs.nav-calls
+	justify-content: flex-end
+	//margin-top: -4.6rem
+	border: 1px solid $light-white!important
+	border-radius: 10px
+	display: inline-flex
+	margin-right: 0
+	margin-left: auto
+	padding: .2rem
+	float: right
+	.nav-link
+		font-size: 1.4rem 
+		line-height: 1.8rem 
+		padding: 0 1.8rem	
+		min-height: 3rem
+		display: flex
+		justify-content: center 
+		align-items: center
+		border: none!important
+		color: $grayD
+		position: relative
+		&:after
+			position: absolute 
+			content: ''
+			height: 1.6rem
+			width: .1rem
+			background-color: $light-white
+			right: -.3rem
+			top: .5rem
+	.active 
+		background-color: $green 
+		color: $white 
+		border-radius: 10px
+
+body
+	.btn.add-new-event-calendar
+		position: absolute
+		display: none
+		top: 0
+		right: 31rem		
+
+.small-calendar-widget
+	height: calc(100% - 3.2rem)	
+		
+.client-data
+	.form-control
+		.form-control
+			&::placeholder
+				color: $dark!important
+
+.modal
+	&.add-new-event
+		.data-form 
+			.form-group:not(.stage-field)
+				select.form-control 
+					min-height: 4rem
+					background-image: url(../img/_src/svg/arrow-bottom.svg)
+					background-repeat: no-repeat
+					background-position: 98% 10px
+					appearance: none				
+		.message-search
+			margin-top: 1.6rem
+			width: 100%
+			max-width: 100%
+			padding: 0
+			.form-group
+				max-width: 100%
+		.data-form .form-row>div
+			padding: 0!important
+		.tab-pane
+			height: 100%
+			justify-content: space-between
+			flex-direction: column
+			display: flex
+		.throw-line
+			margin-top: 1.6rem
+			margin-bottom: -.8rem
+			// margin-bottom: 1.6rem
+		.modal-body
+			padding: 0rem 2rem 2.4rem
+		.form-control
+			&::placeholder
+				color: $dark
+		.client-data 
+			.form-control
+				&::placeholder
+					color: $dark!important					
+		.modal-small-title
+			margin-top: 2.4rem
+			text-transform: uppercase
+			color: $grayD
+			font-size: 1.6rem
+			line-height: 2rem	
+			width: 100%	
+		.modal-dialog
+			max-height: unset
+			max-width: 476px
+			margin-right: -5px
+			margin-top: 0
+			margin-bottom: 0
+			height: 100%
+			background-color: $white
+			align-items: flex-start	
+		.modal-content
+			background-color: $white	
+			display: flex
+			flex-direction: column 
+			justify-content: space-between
+			height: 100%
+		.modal-footer 
+			padding-bottom: 2.4rem
+			border: none
+			justify-content: space-between	
+		.modal-title	
+			font-size: 1.8rem
+			line-height: 2.3rme
+			color: $dark
+			text-transform: unset
+		.modal-header	
+			padding: 2.4rem 2rem 1.6rem
+	.close
+		color: $grayD 
+		padding: 0 
+		font-size: 2rem
+		float: none
+		margin: 0
+	.modal-dialog
+		background-color: transparent
+		max-width: 670px
+		width: 100%
+	.modal-title
+		text-transform: uppercase	
+		font-size: 1.3rem 
+		line-height: 1.6rem 
+		color: $grayD	
+		padding: 0
+		margin: 0
+	.modal-header
+		display: flex
+		justify-content: space-between
+		padding: 1.3rem 3.2rem .9rem
+		border: 1px solid rgba(134,150,158,.2)
+	.modal-content
+		border: none	
+		border-radius: 10px 
+		background-color: $light-white
+		overflow: hidden
+	.flex-content
+		display: flex
+		justify-content: space-between
+		align-items: flex-start	
+	.modal-body	
+		padding: 1.6rem 3.2rem 2.4rem
+	.call-controls
+		display: flex
+		justify-content: center 
+		align-items: center
+		padding-top: .5rem
+		.btn 
+			width: 4.4rem 
+			height: 4.4rem 
+			border-radius: 100%
+			display: flex
+			justify-content: center 
+			align-items: center
+			margin-left: 3.2rem
+			background: rgba(0, 0, 0, 0.1)
+			&:first-of-type
+				margin-left: 0	
+			&.btn-close
+				background-color: $red
+			&.btn-approve
+				background-color: $green		
+
+.hidden
+	display: none
+
+.content .add-image-area
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	justify-content: center 
+	align-items: center
+	display: none	
+	progress
+		display: none
+		margin: 1rem auto 0
+	&.active 
+		display: flex!important
+	&:before 
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		backdrop-filter: blur(80px)
+		opacity: .9 
+		background-color: #fff
+		z-index: 20
+	.area-content
+		position: relative
+		z-index: 30	
+		box-shadow: -1px 0px 10px rgba(134, 150, 158, 0.2)
+		border-radius: 20px 
+		background-color: #fff
+		max-width: 42.8rem
+		width: 100%
+		padding: 2rem 6rem 4.8rem
+		text-align: center
+		.center-img
+			margin: 0 -15px 
+			position: relative
+			z-index: 20
+		img 
+			position: relative
+			z-index: 10	
+		.title
+			text-align: center
+			color: $dark
+			font-size: 1.6rem 
+			line-height: 2rem 
+		.btn-close
+			position: absolute
+			right: 1.8rem 
+			top: 1.8rem	
+		.drop-area 
+			border: 1px dashed $blue
+			max-width: 30.8rem
+			width: 100%
+			border-radius: 20px
+			padding-top: 3.6rem
+			padding-bottom: 6rem
+			margin-top: 2.8rem 
+			p 
+				font-size: 1.3rem 
+				line-height: 2rem
+				margin: 0
+				color: $grayD	
+			.subtitle
+				margin-top: 1.8rem 
+				color: $grayD-dark
+				font-size: 1.6rem 
+				line-height: 2rem  
+				a 
+					color: $blue 
+					font-weight: 700
+					font-family: "VisueltPro-Bold", sans-serif
+
+.message-widget
+	padding-right: 0
+	padding-left: 2rem 	
+
+.message-search
+	padding: 1.2rem 1.6rem
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	justify-content: space-between
+	.call-btn
+		margin-top: 1rem
+	.users-list
+		width: 100%
+		margin-top: 0
+		.call-btn
+			display: none
+		ul
+			padding-top: .8rem
+			padding-right: -.2rem
+			margin-right: -.2rem
+			border-top: 1px solid $green
+	.add-user
+		padding: 0
+		position: relative	
+		top: -.7rem
+		margin-bottom: -.7rem
+		display: inline-block
+	.form-control
+		width: 100%
+		max-width: 90%
+		display: inline-block
+		//padding-right: 5rem!important
+		border-radius: 0
+		border-bottom: 1px solid transparent
+	.call-btn
+		line-height: 4.3rem
+		margin-left: 2rem	
+	.form-group
+		display: inline-flex
+		justify-content: space-between
+		flex-wrap: wrap
+		position: relative
+		margin: 0
+		max-width: 90%
+		max-height: unset
+		transition: all .3s ease
+		label 
+			width: 100%
+		&:hover
+			border-color: $green
+.send-area
+	padding: 1rem 2rem
+	form 
+		display: flex
+		align-items: center
+		.btn 
+			padding: 0
+	.send-btn
+		margin-left: 2rem	
+		display: none	
+	.add-image
+		margin-right: 2rem
+	.form-control 
+		border: 1px solid rgba(134, 150, 158, 0.4)
+		border-radius: 16px
+		background: rgba(239, 242, 249, 0.6)	
+		padding: 0 1.2rem
+		min-height: 3.5rem
+		font-size: 1.5rem
+		line-height: 1.9rem
+		color: $dark
+		max-width: unset
+		&::placeholder 
+			color: $grayD
+	.form-group	
+		margin-bottom: 0
+		width: 100%		
+
+.widget.user-message
+	padding: 0
+	overflow: hidden
+	position: relative
+	.profile-info
+		padding: 1.6rem 2rem
+		border-bottom: 1px solid rgba(134,150,158,.2)
+		border-bottom-left-radius: 0
+		border-bottom-right-radius: 0
+	.message-area
+		height: 52.1rem
+		overflow-y: auto
+		padding-left: 2rem
+		margin-right: .8rem
+		padding-right: 2rem
+		padding-bottom: 5.3rem
+		border-bottom: 1px solid rgba(134,150,158,.2)
+		img 
+			float: left
+			clear: both
+			max-width: 100%
+			border-radius: 12px
+			max-width: 383px
+			max-height: 383px
+			margin: 2px
+		.multiply-images
+			float: left 
+			clear: both 
+			display: flex
+			flex-wrap: wrap 
+			max-width: 400px
+			justify-content: flex-start			
+			&.sent-images
+				float: right
+				clear: both
+				display: flex
+				flex-wrap: wrap 
+				max-width: 400px
+				justify-content: flex-end
+				img 
+					float: none
+			img 
+				max-width: 125px
+				max-height: 125px	
+		.sent-img
+			float: right
+			clear: both 		
+		.date
+			text-transform: uppercase
+			font-size: 1.3rem 
+			line-height: 2.1rem 
+			color: $grayD
+			margin-bottom: .3rem 
+			margin-top: .3rem
+			text-align: center	
+			clear: both
+		br 
+			height: 2px		
+		.message
+			background: rgba(134, 150, 158, 0.2)
+			border-radius: 2rem
+			padding: .8rem 1.2rem
+			font-size: 1.5rem 
+			line-height: 2rem
+			color: $dark
+			display: inline-block
+			margin-bottom: .2rem
+			max-width: 47rem
+			float: left
+			clear: both
+			&.sent-message
+				background-color: $green	
+				color: $white	
+				float: right
+				clear: both
+	
+.message-item
+	padding-bottom: 2rem
+	padding-top: 2rem
+	padding-left: 1.2rem
+	border-top: 2px solid $light-white
+	padding-right: 3.2rem
+	border-top-left-radius: 10px
+	border-bottom-left-radius: 10px		
+	&.active, &:first-of-type
+		border-top: 2px solid transparent
+	&.active + .message-item
+		border-top: 2px solid transparent
+	.top-info
+		margin-bottom: .4rem 
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.name 
+		font-size: 1.6rem 
+		line-height: 2rem 
+		font-weight: 700
+		color: $dark
+		font-family: "VisueltPro-Bold", sans-serif
+		position: relative
+	p 
+		color: $grayD
+		font-size: 1.4rem 
+		line-height: 1.8rem
+		margin: 0
+	.time
+		font-size: 1.4rem 
+		line-height: 1.8rem 
+		color: $grayD	
+		.btn
+			padding: 0
+			margin-left: .6rem
+			position: relative
+			top: -.1rem
+	&.active 
+		background-color: $light-white			
+		border-top-left-radius: 10px
+		border-bottom-left-radius: 10px		
+	&.online 
+		.name	
+			&:before 
+				width: .6rem 
+				height: .6rem 
+				top: .5rem
+				content: ''
+				position: absolute
+				left: -.8rem 
+				border-radius: 100% 
+				background-color: $blue
+		p 
+			color: $dark	
+
+
+.small-widget
+	margin-top: 3.2rem
+	.title
+		font-size: 1.6rem
+		line-height: 2rem 
+		color: $dark
+	.custom-control
+		margin-top: 1.2rem
+		display: flex
+		align-items: center
+		.custom-control-label::before
+			top: 0!important
+		.custom-control-label::after
+			top: 0!important	
+		input 
+			width: 1.6rem
+			height: 1.6rem
+			display: inline-block
+			vertical-align: middle 
+		&.quote-meeting
+			.custom-control-input:checked~.custom-control-label::before
+				background-color: $red 
+				border-color: $red
+		&.work
+			.custom-control-input:checked~.custom-control-label::before
+				background-color: $blue 
+				border-color: $blue
+		&.reminder
+			.custom-control-input:checked~.custom-control-label::before
+				background-color: $purplue 
+				border-color: $purplue	
+		&.other
+			.custom-control-input:checked~.custom-control-label::before
+				background-color: $yellow 
+				border-color: $yellow									
+		label 
+			font-size: 1.5rem 
+			line-height: 1.6rem 
+			color: $dark
+			display: inline-block
+			vertical-align: middle	
+
+	
+
+.event-box
+	display: none
+	position: absolute!important
+	max-width: 44.8rem
+	width: 100%
+	min-height: 21.8rem
+	border-radius: 20px
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.08)
+	background-color: $white
+	z-index: 99
+	padding: 1rem 3.2rem 3.2rem
+	overflow: hidden
+	.close-btn
+		position: relative
+		top: -1px
+		right: 0
+		svg path
+			fill: $grayD
+	&.quote-meeting
+		.event-box-info
+			&:before 
+				background-color: $pink	
+	&.work
+		.event-box-info
+			&:before 
+				background-color: $blue
+	&.other
+		.event-action
+			opacity: 0
+		.event-box-info
+			&:before 
+				background-color: $yellow										
+	.event-box-info
+		padding-top: 2.4rem 
+		position: relative
+		&:before 
+			width: 4.3rem
+			height: 4.3rem 
+			content: ''
+			position: absolute
+			left: -5.5rem
+			top: 2.5rem
+			border-radius: 100%
+			background-color: $purplue
+		.title
+			font-size: 1.6rem
+			line-height: 2rem
+			color: $dark
+			margin-bottom: .8rem 
+		.event-date
+			color: $grayD
+			font-size: 1.4rem
+			line-height: 1.8rem
+			margin-bottom: 2.2rem
+		.event-widget-info
+			.widget-title			
+				font-size: 1.4rem
+				line-height: 1.8rem
+				color: $grayD
+				margin-bottom: .4rem
+			.value
+				font-size: 1.4rem
+				line-height: 1.8rem
+				color: $dark
+				margin-bottom: .5rem
+	.event-box-top
+		border-bottom: 1px solid $grayD-light
+		padding-bottom: .9rem
+		display: flex
+		justify-content: space-between
+		align-items: center 
+		.btn 
+			padding: 0
+			margin-right: 1rem
+			width: 3.3rem
+			height: 3.3rem 
+			display: inline-flex
+			align-items: center 
+			justify-content: center
+			background-color: $green 
+			border-radius: 100%
+		.event-edit
+			a 
+				width: 3.3rem 
+				height: 3.3rem 
+				display: inline-flex 
+				align-items: center 
+				justify-content: center
+				margin-left: 1rem	
+
+.weeks-thead
+	max-width: 200px
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+
+.fc .fc-day-other .fc-daygrid-day-top
+	opacity: 1
+	.fc-daygrid-day-number
+		color: $grayD!important
+
+.larger-calendar .fc-view-harness
+	background: #FFFFFF
+	box-shadow: 0px 3px 9px 2px rgba(229, 229, 229, 0.4)
+	border-radius: 20px!important
+
+.weeks-thead .fc-scrollgrid-sync-inner
+	opacity: 1!important
+	span 
+		min-height: 3.2rem
+		display: flex
+		align-items: center 
+		justify-content: center
+		color: $grayD 
+		font-size: 1.1rem
+		line-height: 1.3rem
+		text-align: center
+		text-transform: uppercase
+	a 
+		font-size: 1rem!important
+		font-size: 2.6rem!important
+		line-height: 5.2rem!important
+		border-radius: 100%		
+		color: $dark!important		 
+		padding: 0
+		width: 4.6rem
+		height: 4.6rem
+		display: block
+		text-align: center
+
+.weeks-thead .fc-day-today
+	span 
+		color: $green
+	a 
+		background-color: $green!important	
+		color: $white!important		
+
+.fc-cell-shaded
+	display: none!important
+.fc-timegrid-axis-cushion
+	text-transform: uppercase
+	font-size: 1rem 
+	line-height: 1.2rem 
+	color: $grayD	
+
+.fc-daygrid-body-natural
+	border-bottom: 1px solid $grayD-light
+
+.fc .fc-timegrid-axis-frame
+	justify-content: flex-start
+
+.fc .fc-button-primary:focus, .fc .fc-button-primary:not(:disabled).fc-button-active:focus, .fc .fc-button-primary:not(:disabled):active:focus
+	box-shadow: unset!important 
+	border-color: $green
+
+.calendar
+	.fc-today-button
+		display: none
+	.fc-toolbar-title
+		font-size: 1.6rem
+		line-height: 2rem
+		color: $dark
+		font-family: "VisueltPro-Regular", sans-serif
+	.fc-button
+		background-color: transparent
+		border: none
+		color: $green
+		font-size: 1.5rem
+		padding: 0
+	&.small-calendar	
+		.fc-view-harness
+			margin: 0 -.6rem
+		td 
+			border: none
+		.fc-daygrid-day-number
+			padding: 0	
+	th 
+		text-transform: uppercase
+		border: none
+		opacity: .7
+	table 
+		border: none!important
+		a		
+			font-size: 1rem!important
+			line-height: 1.2rem!important
+			color: $dark!important					
+	&.fc .fc-daygrid-day-frame
+		// max-height: 24px
+		min-height: 24px
+		// max-width: 24px
+		text-align: center
+		margin: 0 auto
+		display: flex
+		align-items: center
+		justify-content: center
+	&.fc .fc-daygrid-day-top
+		justify-content: center
+		position: relative
+		// margin-top: .8rem
+	&.fc .fc-scroller-liquid-absolute
+		// overflow: visible!important
+	&.fc .fc-daygrid-day.fc-day-today
+		background-color: transparent
+		.fc-daygrid-event 
+			border-radius: 5px 
+			margin: 0 1px 2px 
+		.fc-daygrid-day-number
+			background-color: $green!important
+			border-radius: 100%				 
+			color: $white!important
+			padding: 3px 0 0 
+			width: 2.4rem
+			height: 2.4rem
+			display: flex
+			align-items: center
+			justify-content: center				
+	.fc-daygrid-day-events
+		display: none!important	
+	.fc-next-button, .fc-prev-button
+		background-color: transparent!important
+		color: $green!important
+		outline: none!important
+		border: none!important						
+	&.larger-calendar
+		.fc-timegrid-event 
+			padding-top: 2px
+		.fc-timegrid-event .fc-event-time
+			font-size: 1.2rem 
+			line-height: 1.6rem 
+			font-family: 'VisueltPro-Light', sans-serif
+			font-weight: 300
+			color: $dark
+		.fc-timegrid-event .fc-event-title
+			font-size: 1.2rem 
+			line-height: 1.6rem
+			color: $dark
+		thead 
+			td 
+				padding: 0!important
+			th 
+				padding-top: 1rem
+				opacity: 1
+				border-right: 1px solid $grayD-light!important	
+				&:last-of-type
+					border-right: none!important
+		.fc-prev-button
+			border: 1px solid $light-white!important
+			border-radius: 0
+			border-top-left-radius: 20px
+			border-bottom-left-radius: 20px
+		.fc-next-button
+			border: 1px solid $light-white!important
+			border-left: 1px solid transparent!important	
+			border-radius: 0
+			border-top-right-radius: 20px
+			border-bottom-right-radius: 20px
+		.fc-dayGridMonth-view
+			td 
+				border-left: none!important		
+				border-bottom: none!important
+			.fc-scrollgrid-sync-table
+				tr:first-of-type 
+					td 
+						border-top: none!important				 
+			.fc-daygrid-day-events
+				top: 25px
+		td.fc-daygrid-day 
+			height: 12.5rem
+		.fc-timeGridDay-view
+			.fc-scrollgrid-sync-inner
+				text-align: left
+		.fc-timeGridWeek-view, .fc-timeGridDay-view	
+			.fc-timegrid-col-events
+				margin-top: -17px
+			// .fc-scrollgrid-section:nth-of-type(2)
+			// 	display: none
+			// tbody 
+			// 	.fc-scrollgrid-section:nth-of-type(1)
+			// 		td 
+			// 			border-bottom: 1px solid $grayD-light!important
+			.fc-timegrid-cols	
+				td 
+					border-left: none!important	
+					padding: 1.8rem 0	
+				tr:last-of-type
+					td:first-of-type 
+						border-bottom: none!important
+					td	
+						border-bottom: none!important
+					td:last-of-type
+						border-right: none!important						
+			.fc-timegrid-slots 
+				td 
+					padding: 1.8rem 0
+					border-bottom: 1px solid $grayD-light!important	
+					&:last-of-type
+						border-right: none!important
+				td:first-of-type
+					padding-right: 1.5rem!important		
+					padding-left: 1.5rem!important		
+				tr:first-of-type 
+					td:first-of-type
+						.fc-timegrid-slot-label-cushion
+							color: transparent					
+				tr:last-of-type
+					td:first-of-type 
+						border-bottom: none!important	
+					td	
+						border-bottom: none!important											
+		.fc-timeGridWeek-view, .fc-timeGridDay-view		
+			td 
+				border-top: none
+			.fc-timegrid-axis
+				border-right: none!important	
+			tr:nth-of-type(2n)
+				td 
+					//border-bottom: none!important
+			.fc-daygrid-day-frame
+				max-height: unset!important			
+				padding-bottom: 2px
+			.fc-timegrid-slots
+				td:first-of-type
+					border: none!important	
+					.fc-timegrid-slot-label-frame
+						position: relative
+						top: -22px
+						color: $grayD 
+						font-size: 1rem
+						line-height: 1.2rem
+			td 
+				height: auto
+				border-right: 1px solid $grayD-light
+				&:first-of-type
+					font-size: 1rem
+					line-height: 1.2rem
+					min-width: 5.7rem		
+			.fc-timegrid-col.fc-day-today
+				background-color: transparent!important
+			.fc-timegrid-event
+				border: none
+				padding-left: 4px
+				border-left: 3px solid $purplue
+				background-color: #F5EEFC
+				.fc-event-main
+					color: $dark!important
+					font-size: 1.2rem
+					line-height: 1.6rem
+					border-radius: 4px 
+				&.work
+					border-left: 3px solid $blue
+					background-color: #ECF0FF	
+				&.quote-meeting
+					border-left: 3px solid $pink
+					background-color: #FFEAED	
+				&.other
+					border-left: 3px solid $yellow
+					background-color: #FDF9ED														
+			th 
+				opacity: 1!important
+				span 
+					max-width: 4.6rem
+					text-align: center
+					width: 100%
+					min-height: 3.2rem
+					display: flex
+					align-items: center 
+					justify-content: center
+					color: #86969E 
+					font-size: 1.1rem
+					line-height: 1.3rem
+					text-align: center
+				a 
+					font-size: 1rem!important
+					font-size: 2.6rem!important
+					line-height: 4.6rem!important
+					border-radius: 100%		
+					color: $dark!important		 
+					padding: 0
+					width: 4.6rem
+					height: 4.6rem
+					display: inline-flex
+					align-items: center 
+					justify-content: center										
+			th.fc-day-today
+				opacity: 1!important
+				a 
+					font-size: 1rem!important
+					font-size: 2.6rem!important
+					line-height: 4.6rem!important
+					background-color: $green!important
+					border-radius: 100%				 
+					color: $white!important
+					padding: 0
+					max-width: 4.6rem
+					min-width: 4.6rem
+					min-height: 4.6rem
+					display: inline-flex
+					align-items: center 
+					justify-content: center	
+				span 
+					color: $green!important 			
+		.fc-toolbar-chunk
+			position: relative
+			top: -2px
+			&:nth-of-type(2)
+				position: absolute
+				right: 18.5rem
+			.fc-toolbar-title
+				font-size: 2rem
+				line-height: 2.4rem 
+				display: inline-block
+				color: $dark
+				vertical-align: middle
+				position: relative
+				top: 2px
+				margin-right: .8rem
+			button 
+				display: inline-block
+				vertical-align: middle	
+		.fc-header-toolbar
+			margin-bottom: 3.2rem
+		.fc-more-popover
+			border-radius: 20px
+			box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.08)
+			border: 1px solid $light-white
+			.fc-popover-header 
+				background-color: transparent
+				justify-content: center
+				padding-top: 2rem
+				flex-wrap: wrap 
+				.fc-popover-title
+					width: 100%
+					text-align: center
+					font-size: 2.6rem
+					line-height: 2.4rem 
+					color: $dark
+					max-width: 50%
+					text-align: center
+				.fc-popover-week
+					font-size: 1.1rem 
+					line-height: 1.3rem 
+					color: $grayD
+					margin-bottom: 1rem					
+				.fc-popover-close
+					position: absolute
+					right: 1.8rem 
+					top: 1.8rem
+					font-size: 2rem
+					color: $dark!important
+					opacity: 1!important
+			.fc-daygrid-event
+				margin-bottom: 8px
+				&.fc-daygrid-dot-event
+					padding: 0				
+		.fc-daygrid-event
+			background-color: $purplue
+			border-color: $purplue
+			&.fc-daygrid-dot-event
+				background-color: transparent!important 
+				border-color: transparent!important
+			.fc-daygrid-event-dot
+				border-color: $purplue
+				position: relative
+				top: -1px
+				margin-left: 0
+			&.quote-meeting
+				background-color: $pink
+				border-color: $pink
+				.fc-daygrid-event-dot
+					border-color: $pink				
+			&.work
+				background-color: $blue
+				border-color: $blue 
+				.fc-daygrid-event-dot
+					border-color: $blue
+			&.other
+				background-color: $yellow
+				border-color: $yellow 
+				.fc-daygrid-event-dot
+					border-color: $yellow	
+		.fc-daygrid-event
+			padding-top: .1rem
+			min-height: 2.2rem
+		.fc-daygrid-more-link
+			font-size: 1.2rem!important
+			line-height: 1.6rem!important
+			font-weight: 700
+			font-family: "VisueltPro-Bold", sans-serif
+			color: $green!important
+		.fc-daygrid-event
+			font-size: 1.2rem!important 
+			line-height: 1.6rem!important
+			margin: 2px 
+			border-radius: 3px
+			min-height: unset 
+			height: 100%
+			max-height: 2.2rem
+			padding: 0 .5rem 
+		.fc-event-title
+			font-weight: 400		
+		.fc-daygrid-day-events
+			margin: 0 
+			width: 100% 
+			text-align: left	
+		.fc-daygrid-day-frame
+			flex-wrap: wrap		
+			max-width: unset
+			align-items: flex-start
+			width: 100% 
+			margin: 0
+			.fc-daygrid-event-harness
+				// margin-top: 0!important
+		.fc-view-harness
+			border-radius: 70px
+			//box-shadow: 0px 3px 9px 2px rgba(229, 229, 229, 0.4)
+		th 
+			a 
+				font-size: 1.1rem!important
+				line-height: 1.3rem!important
+				color: $grayD!important
+		.fc-daygrid-day-events
+			display: block!important
+		.fc-toolbar-chunk			
+			display: flex
+			align-items: center
+		.fc-toolbar-chunk:nth-of-type(3)
+			min-width: 17rem
+			min-height: 3.6rem			
+			.fc-button-group
+				min-width: 17rem
+				min-height: 3.6rem
+				flex-direction: column	
+				position: absolute
+				top: 4.2rem
+				right: 0
+				z-index: 99
+				.fc-button
+					text-align: left
+					padding-left: 4.9rem				
+				&.showed
+					background: #FFFFFF	
+					box-shadow: -1px 0px 10px rgba(134, 150, 158, 0.2)
+					border-radius: 4px
+				.fc-button:not(.fc-button-active)
+					border-radius: 0
+					border: none
+					transition: all .3s ease
+					color: $grayD!important 
+					&:hover
+						background-color: $light-white
+						color: $grayD!important
+				.fc-button-active
+					position: absolute
+					top: -4.3rem!important	
+		.fc-button-group
+			.fc-button.fc-button-active 
+				display: inline-block!important
+				opacity: 1
+				background-color: transparent
+				color: $dark
+				top: 0!important
+				&:after
+					background-image: url('../img/_src/svg/arrow-bottom-green.svg')
+					background-repeat: no-repeat
+			// 	+ .fc-button
+			// 		 top: 4rem		
+			// .fc-dayGridMonth-button:not(.fc-button-active) 
+			// 	+ .fc-timeGridWeek-button:not(.fc-button-active) 
+			// 		 top: 4rem							 
+			.fc-button:not(.fc-button-active)
+				position: static	
+				right: 0
+				background-color: $white
+				z-index: 40		
+				top: 8rem
+				// opacity: 0
+				display: none
+			.fc-button.fc-addNewEventCalendar-button
+				margin-right: 1.6rem!important
+				position: static!important
+				min-width: 11.8rem!important
+				min-height: 3.4rem!important
+				padding-left: 2rem
+				border-color: $green!important
+				background-color: $green!important
+				color: $white!important	
+				display: block!important
+				opacity: 1!important
+				&:hover 
+					color: $white!important	
+			.fc-button
+				font-size: 1.4rem
+				line-height: 1.8rem
+				text-transform: capitalize
+				min-width: 17rem
+				min-height: 3.6rem 
+				border-radius: 10px 
+				border: 1px solid $light-white
+				box-shadow: none
+				display: block
+				position: relative
+				&:hover 
+					color: $dark!important	
+				&:after 
+					content: ''
+					width: 20px
+					height: 20px
+					position: absolute
+					right: 1.7rem
+					top: .8rem
+					background-position: center					
+				&.fc-dayGridMonth-button
+					background-position: 1.7rem .8rem
+					background-image: url('../img/_src/svg/monthly-icon-gray.svg')
+					background-repeat: no-repeat
+					&.fc-button-active	
+						background-image: url('../img/_src/svg/monthly-icon.svg')
+				&.fc-timeGridWeek-button 
+					background-position: 1.7rem .8rem
+					background-image: url('../img/_src/svg/weekly-icon-gray.svg')
+					background-repeat: no-repeat	
+					&.fc-button-active	
+						background-image: url('../img/_src/svg/weekly-icon.svg')
+				&.fc-timeGridDay-button
+					background-position: 1.7rem .8rem
+					background-image: url('../img/_src/svg/daily-icon-gray.svg')
+					background-repeat: no-repeat	
+					&.fc-button-active	
+						background-image: url('../img/_src/svg/daily-icon.svg')								
+		.fc-today-button
+			display: block!important 
+			opacity: 1!important
+			position: static!important
+			text-transform: capitalize
+			display: inline-block!important
+			border: 1px solid $green!important			
+			color: $dark!important
+			opacity: 1
+			background-color: transparent 
+			border-radius: 10px!important
+			margin-right: 1.6rem
+			font-size: 1.4rem
+			line-height: 1.8rem
+			min-width: 9.7rem!important
+			min-height: 3.4rem!important
+		.fc-daygrid-body td		
+			padding-top: 1.1rem
+			border-bottom: none
+			border-right: 1px solid $grayD-light
+			a 
+				font-size: 1.2rem!important
+				line-height: 1.6rem!important
+			&:last-of-type
+				border-right: none
+			&:first-of-type
+				border-left: none	
+		.fc-col-header 
+			th 
+				border: none
+		thead 
+			margin-bottom: -2rem
+			td
+				border: none!important		
+		.fc-scrollgrid-section-body		
+			> td 
+				border: none
+			tbody 
+				tr:last-of-type 
+					border: none				
+.widget-settings
+	padding-left: 0
+	padding-top: 0
+	padding-bottom: 0
+	> .row 
+		align-items: stretch 
+	.col-md-2
+		padding: 0
+	.row
+		margin-left: 0
+	.main-content
+		min-height: 52rem
+	.bottom-control
+		margin-top: 4rem
+		padding: 1.6rem 3.2rem 1.6rem 0
+		border-top: 2px solid $light-white	
+		display: flex
+		align-items: center
+		.btn 
+			margin-right: 1.6rem
+.nav-vertical
+	padding-top: 2.2rem
+	border-right: 1px solid $grayD-light
+	height: 100%
+	.nav-link
+		transition: all .3s ease
+		padding: 1.2rem 1.8rem
+		font-size: 1.4rem
+		line-height: 1.8rem
+		color: $grayD-lighter
+		border-left: 2px solid transparent
+		svg 
+			margin-right: .8rem
+		&.active, &:hover 
+			background: linear-gradient(90deg, rgba(67,209,79,.2) 0.74%, rgba(255,255,255,.2) 117.98%)
+			border-left: 2px solid $green
+			color: $dark
+			svg 
+				path
+					fill: $green 
+				path[stroke="#86969E"]	
+					stroke: $green
+					fill: transparent
+				rect[fill="#86969E"]
+					fill: $green 
+				rect[stroke="#86969E"]
+					stroke: $green 	
+				circle 
+					stroke: $green		
+.settings-content
+	height: 100%
+	.wrap-content
+		display: flex
+		justify-content: space-between
+		flex-direction: column
+		height: 100%
+	.tab-pane 
+		height: 100%
+	.data-form
+		max-width: 72rem
+	.data-form .form-row>div:nth-of-type(2)
+		padding-left: .8rem 
+	.data-form .form-row>div:nth-of-type(1)
+		padding-right: .8rem	
+
+.no-flex
+	display: block!important
+
+.t-m-22
+	margin-top: 3.2rem
+
+input:-internal-autofill-selected
+	background-color: transparent!important
+	
+.form-items
+	border-bottom: 2px solid $light-white
+	padding: 1.6rem 0
+	.integration-value
+		font-size: 1.6rem
+		line-height: 2rem 
+		color: $dark
+	&:first-of-type
+		border-top: 2px solid $light-white
+	.data-form
+		max-width: 100%
+		width: 100%
+	.form-row
+		align-items: center
+		margin: 0
+		.form-group
+			margin: 0
+
+.prefix-group
+	display: flex!important
+	flex-wrap: wrap
+	align-items: center 
+	margin-left: 1.4rem!important
+	&.prefix-single-group
+		margin-left: 0!important
+	.form-control
+		display: inline-block
+		max-width: unset
+		width: auto
+		&::placeholder 
+			color: $dark!important
+	label 
+		width: 100%
+	.prefix 
+		font-size: 1.6rem 
+		line-height: 2rem 
+		color: $grayD 		
+		// position: absolute	
+		bottom: .8rem
+	.form-control
+		padding-left: 0rem!important
+.customize-select
+	background-image: url(../img/_src/svg/arrow-bottom.svg)
+	background-repeat: no-repeat
+	background-position: 98% 5px
+	appearance: none
+	padding-left: 1.6rem
+
+.settings-content
+	padding-top: 3.2rem
+	padding-left: 1.5rem	
+	p 
+		color: $grayD 
+		font-size: 1.4rem 
+		line-height: 1.8rem 
+
+.user-name				
+	font-size: 2.5rem 
+	line-height: 3.2rem 
+	color: $dark
+	display: inline-block
+	vertical-align: middle
+	margin-right: 1.2rem
+
+.user-value
+	color: $grayD 
+	font-size: 1.7rem 
+	line-height: 2.1rem 
+	display: inline-block
+	vertical-align: middle
+
+
+.user-type
+	background-color: $grayD 
+	padding: .6rem .8rem
+	display: inline-block
+	color: $white 
+	font-size: 1.2rem 
+	line-height: 1.2rem 
+	letter-spacing: -0.084px
+	border-radius: 6px
+	margin-top: .6rem
+	&.meeting-type
+		background-color: $red 
+	&.work-in-progress-type
+		background-color: $blue
+	&.not-listed-type
+		background-color: $orange-light
+	&.complete
+		background-color: $green			
+	&.lead 
+		background-color: $blue-light			
+
+.dropdown-toggle::after
+	display: none	
+
+.dropdown
+	background-repeat: no-repeat
+	background-position: 1.6rem .8rem
+	min-width: 17rem
+	position: relative
+	&[data-show-view="list"]
+		background-image: url('../img/_src/svg/list-icon.svg')
+	&[data-show-view="funnel"]
+		background-image: url('../img/_src/svg/funnel-icon.svg')	
+	.dropdown-menu
+		width: 100%
+	.dropdown-toggle
+		width: 100%
+		height: 100%
+		padding: 0
+		min-height: 3.4rem
+		margin: 0		
+	.dropdown-toggle,.dropdown-item
+		color: $dark 
+		font-family: "VisueltPro-Regular", sans-serif
+		font-size: 1.4rem 
+		line-height: 1.8rem
+	svg 
+		position: absolute
+		right: 12px
+		top: 1.3rem
+		path
+			fill: $green	
+	.dropdown-item
+		&.active 
+			display: none	
+		&:active
+			background-color: $light-white	
+
+.close-target
+	position: relative
+
+.close-btn
+	padding: 0
+	position: absolute	
+	top: 3.2rem
+	right: 3.2rem
+	img 
+		width: 1.4rem
+
+b 
+	font-weight: 700
+	font-family: "VisueltPro-Bold", sans-serif!important
+
+.update-card
+	.btn 
+		&:first-of-type
+			margin-bottom: 2rem
+
+
+.update-card
+	margin-left: 3.2rem
+
+.biling-widget
+	max-width: 70rem
+	border-radius: 8px
+	border: 1px solid rgba(134,150,158,.3)
+	padding: 2rem
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 3.4rem
+	p 
+		color: $grayD
+		font-size: 1.3rem 
+		line-height: 1.8rem
+		margin-bottom: 1.6rem
+		b 
+			color: $dark
+
+.btn.check-invoices
+	border: 1px solid $green
+	border-radius: 10px
+	min-width: 20.6rem
+	min-height: 3.4rem
+	display: inline-flex
+	align-items: center
+	justify-content: center		
+	font-size: 1.4rem 
+	line-height: 1.8rem
+	color: $dark
+
+
+input[type=text]::-ms-clear   
+	display: none 
+	width: 0
+	height: 0
+input[type=text]::-ms-reveal 
+	display: none
+	width: 0
+	height: 0 
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration 
+	display: none	
+
+.update-card-widget
+	margin-top: 1.6rem
+	display: flex
+	align-items: center	
+
+.subscription-card
+	border-radius: 8px
+	border: 1px solid rgba(134,150,158,.3)
+	padding: 2.3rem 2rem 1.6rem 
+	margin-bottom: 1.6rem
+	max-width: 70rem
+	p 
+		color: $grayD 
+		margin: 0
+		font-size: 1.2rem
+		line-height: 1.8rem
+		b
+			color: $dark
+	.top-info
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding-bottom: 1.2rem
+		border-bottom: 2px solid $light-white
+		margin-bottom: 1.2rem
+		.subscribe-control
+			display: flex
+			.btn
+				padding: 0
+				&:first-of-type
+					margin-right: 1.6rem
+		picture 
+			display: block
+			margin-bottom: 1rem
+		.name		
+			color: $dark
+			font-size: 1.4rem 
+			line-height: 1.8rem
+			font-weight: 700
+			font-family: "VisueltPro-Bold", sans-serif
+		.duration
+			color: $grayD 
+			font-size: 1.3rem 
+			line-height: 1.6rem 	
+.recording-bar-wrap 
+	width: 100%
+	height: 100%
+	min-height: 60px
+	position: relative
+	display: flex
+	align-items: center
+	border-radius: 10px
+	.editing
+		top: 0
+		position: absolute
+		left: 0
+		height: 100%
+		width: 35%
+		background-color: rgba(57,98,250,.15)
+		border-right: 1px solid $blue
+		border-top-left-radius: 10px
+		border-bottom-left-radius: 10px
+		z-index: 10
+		&:before, &:after 
+			content: ''
+			position: absolute
+			right: -3px
+			top: 0
+			width: 5px
+			height: 5px 
+			border-radius: 100%
+			background-color: $blue 
+		&:after 
+			top: auto 
+			bottom: 0	
+.content .player
+	box-shadow: unset
+	width: 100%
+	background-color: transparent	
+	position: relative
+	z-index: 20
+	.holder, .download
+		position: absolute
+		top: 12px
+		right: 20px
+		width: 30px
+		height: 30px 
+		background-color: $green
+		border-radius: 100%
+		svg 
+			display: none		
+		.play-pause-btn
+			width: 100%
+			height: 100%
+			display: block
+			background-position: 12px 9px
+			background-repeat: no-repeat
+			background-image: url('../img/_src/svg/play-white-icon.svg')
+	.download 
+		right: 60px
+		.download__link
+			width: 100%
+			height: 100%
+			display: block
+			background-repeat: no-repeat			
+			background-position: 10px 8px
+			background-image: url('../img/_src/svg/download-icon.svg')
+	.play-pause-btn[title="Pause"]	
+		background-position: center
+		background-image: url('../img/_src/svg/pause-icon.svg')				
+	.slider
+		background-color: rgba(135,150,158,.3)
+	.pin
+		background-color: $green!important
+	.volume 
+		display: none		
+	.controls 
+		margin: 0 80px 0 0!important		
+		font-family: "VisueltPro-Regular", sans-serif	
+		display: flex
+		flex-direction: row-reverse
+	.controls__total-time	
+		display: none
+	.controls__current-time
+		color: $green 
+		font-size: 1.6rem 
+		line-height: 2rem 
+		font-weight: 700	
+		font-family: "VisueltPro-Bold", sans-serif
+
+.custom-switch
+	width: 4.9rem 
+	height: 2.6rem
+	padding: 0
+	input 
+		position: absolute
+		width: 100%
+		height: 100%
+
+.custom-switch .custom-control-label::before
+	width: 4.9rem
+	height: 2.6rem
+	border-radius: 18px
+	background-color: $grayD
+	left: 0
+	top: 0
+
+.custom-switch .custom-control-label::after
+	width: 2.2rem
+	height: 2.2rem
+	border-radius: 100%		
+	background-color: $white
+	left: .15rem
+	top: .15rem
+
+.custom-switch .custom-control-input:checked~.custom-control-label::after
+	transform: translateX(2.4rem)			
+
+.no-p
+	padding: 0
+
+.btn 
+	padding-top: 0
+	padding-bottom: 0
+
+.btn-next
+	position: relative
+	top: -2px
+	background-color: $green
+	width: 3.3rem 
+	height: 3.3rem 
+	display: inline-block
+	border-radius: 100%
+	padding: 0
+	line-height: 3.3rem
+
+.start-call
+	font-size: 1.6rem
+	line-height: 2rem 
+	min-width: 14rem
+	color: $dark
+	font-family: "VisueltPro-Regular", sans-serif
+	position: absolute
+	right: 5.2rem 
+	top: 6.4rem
+	transition: all .3s ease
+	border: 1px solid transparent
+	background-color: $white
+	padding: 1px 1px 1px 1.2rem 
+	border-radius: 3.4rem
+	display: flex
+	justify-content: space-between
+	align-items: center
+	span 
+		display: inline-block
+		margin-right: 0rem
+		position: relative
+		top: .2rem
+	&:hover 
+		color: $dark
+		border-color: $green 
+	
+
+.call-btn
+	min-width: 4.4rem 
+	height: 4.4rem 
+	text-align: center
+	background-color: $green
+	border-radius: 100%			
+
+.add-field
+	margin-top: 1rem
+	display: flex	
+	align-items: center
+	color: $green
+	font-size: 1.6rem
+	line-height: 2rem
+	padding: 0
+	.plus
+		background: rgba(67, 209, 79, 0.2)
+		border-radius: 100%
+		display: inline-block
+		width: 4rem
+		height: 4rem
+		text-align: center
+		line-height: 4rem
+		font-size: 2rem
+		margin-right: .8rem
+
+.help-item
+	border: 1px solid rgba(134,150,158,.3)
+	border-radius: 8px
+	padding: 1.6rem 
+	display: flex
+	max-width: 70rem
+	margin-bottom: 1.6rem
+	picture	
+		min-width: 5.5rem
+		margin-right: 2.3rem
+		display: inline-block
+	.title 
+		color: $dark
+		font-size: 1.8rem
+		line-height: 2.3rem
+		margin-bottom: .5rem
+	p 
+		color: $grayD
+		font-size: 1.4rem
+		line-height: 1.8rem
+	.btn 
+		max-width: 11.7rem
+
+.password-form
+	.form-group
+		max-width: 34.4rem
+		.form-control::placeholder
+			color: $grayD!important
+
+.delete-icon
+	&:hover 
+		svg 
+			path 
+				fill: $pink
+
+.btn-default
+	background-color: $green
+	color: $white
+	border-radius: .4rem
+	display: flex
+	align-items: center
+	justify-content: center
+	font-size: 1.4rem
+	line-height: 1.8rem
+	font-family: 'VisueltPro-Bold', sans-serif
+	transition: all .3s ease
+	&:hover 
+		color: $white
+		// opacity: .7
+
+.btn-transparent
+	background-color: $light-white
+	color: $dark
+	border: 1px solid rgba(134, 150, 158, 0.3)
+	&:hover 
+		color: $dark
+
+.btn-profile 
+	padding: 0
+	border: 1px solid $green	
+	border-radius: 10px
+	color: $dark
+	max-width: 11.8rem 
+	min-height: 3.4rem 
+	width: 100% 
+	display: block
+	font-size: 1.4rem 
+	line-height: 3.4rem 
+	margin: 0 auto 0
+	font-family: 'VisueltPro-Regular', sans-serif
+
+.btn-add,.fc-addNewEventCalendar-button
+	position: relative
+	background-image: url('../img/_src/svg/plus-white.svg')	
+	background-repeat: no-repeat
+	background-position: 1.6rem .7rem
+	border-radius: 1rem
+	text-align: right
+	justify-content: flex-end
+	padding: .8rem 1.6rem
+	
+
+
+
+.widget 
+	.btn-add	
+		position: absolute
+		right: 3rem
+		top: 3.2rem
+
+.form-group
+	.pink 
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		top: .2rem
+
+		
+.turn-notifications
+	&.bd-b
+		border-bottom: 2px solid $light-white
+	picture
+		min-width: 9.6rem 
+		text-align: center
+		margin-right: 1.2rem
+	.notification-info
+		&.flex 
+			align-items: center
+			.btn 
+				padding: 0
+				margin-right: 2rem
+	.top-panel
+		font-size: 1.6rem
+		line-height: 2rem
+		color: $dark
+		margin-bottom: 1.6rem
+		.control-wrap
+			display: flex
+			align-items: center
+			justify-content: flex-end
+		.swither-option
+			margin-right: 4.2rem 
+	.notification-item
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-top: 2px solid $light-white
+		padding: 1.6rem 0
+		p 
+			margin: 0
+		.control-wrap
+			display: flex
+			align-items: center 
+			justify-content: flex-end
+		.custom-switch
+			margin-right: 5.5rem
+			&:last-of-type
+				margin-right: 4.2rem	
+		.title
+			color: $dark
+			font-size: 1.6rem 
+			line-height: 2rem 
+			b 
+				color: $dark
+				font-weight: 700 
+				font-family: "VisueltPro-Bold", sans-serif
+
+//custom select
+.select2-container
+	width: auto!important
+
+.select2-dropdown 	
+	background: #FFFFFF
+	box-shadow: -1px 0px 10px rgba(134, 150, 158, 0.2)
+	border-radius: 4px!important
+	min-width: 24rem
+	border: none!important
+	.select2-search  
+		display: none
+	.select2-results__options
+		li 
+			font-size: 1.6rem 
+			line-height: 2.8rem 
+			padding: .6rem 3rem 
+			color: $grayD	
+	.select2-results__option--highlighted 
+		background-color: $light-white!important
+		color: $grayD!important		
+			
+.select2-selection
+	border: none!important 
+	box-shadow: unset!important	
+
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered
+	font-size: 1.4rem 
+	line-height: 1.8rem
+	color: $grayD		
+	min-height: 26px
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	color: $orange-light
+	padding-left: 1.6rem 
+	padding-right: 3rem
+
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered[title="Completed"] 	
+	color: $green	
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered[title="Meeting Scheduled"], 
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered[title="Quote Meeting"]	 	
+	color: $pink	
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered[title="Lead"] 	
+	color: $blue-light
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered[title="Work in Progress"] 	
+	color: $blue				
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered[title="Cancelled"] 	
+	color: $grayD
+
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__arrow
+	top: 40%		
+	
+
+.widget .btn-add-item
+	position: static
+	margin: 2rem auto 0
+	background-position: 3rem 1rem
+	justify-content: center
+	padding-left: 5.4rem
+	border-radius: 4px 
+
+.btn-extra-large
+	min-width: 17.6rem
+	min-height: 4.2rem
+
+.btn-lg-add-event
+	min-width: 25rem
+	min-height: 5.8rem
+
+.btn-lg-close-event
+	min-width: 17rem
+	min-height: 5.8rem		
+	color: $dark
+	font-size: 1.4rem
+	line-height: 1.8rem
+
+.btn-lg-large
+	min-width: 22.7rem
+	min-height: 5.8rem
+	max-height: 5.8rem
+
+.btn-very-extra-large
+	min-width: 17.6rem 
+	line-height: 5.8rem
+
+.btn-large
+	min-width: 30.4rem
+	min-height: 5.8rem
+
+.btn-medium
+	min-width: 11.8rem
+	min-height: 3.4rem
+
+.btn-middle
+	min-width: 12.5rem
+	min-height: 3.4rem		
+
+.btn-small		
+	min-width: 8.7rem 
+	min-height: 2.8rem
+
+@import "media" // Always at the end

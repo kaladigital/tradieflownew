@@ -1,0 +1,987 @@
+@import "vars"
+@import "_mixins/mixins"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: $grayD
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html 
+	font-size: 10px
+	line-height: 10px
+
+body
+	font-size: 10px
+	min-width: 320px
+	position: relative
+	line-height: 10px
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background-color: $white
+	input, textarea
+		border: none
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.close 
+	position: absolute
+	right: 1rem
+	top: 1rem
+	display: none
+	svg 
+		width: 20px
+		path 
+			fill: $dark
+
+.show-nav
+	position: absolute
+	right: 0
+	display: none
+	top: 1rem
+	svg 
+		width: 20px 
+		path 
+			fill: $dark	
+	
+.wrapper
+	overflow-x: hidden
+
+*::-webkit-scrollbar-track
+	border-radius: 4px
+	background: transparent
+
+*::-webkit-scrollbar
+	width: 3px
+	background: transparent
+
+*::-webkit-scrollbar-thumb
+	border-radius: 4px
+	width: 3px
+	background: rgba(134, 150, 158, 0.4)
+
+	
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a 
+	text-decoration: none!important	
+
+button 
+	box-shadow: none
+	border: none
+	outline: none
+
+input::placeholder		
+	color: $grayD
+
+.flex	
+	display: flex
+
+.flex-end
+	align-items: flex-end!important	
+
+.flex-s-b
+	justify-content: space-between	
+
+.flex-v-center	
+	align-items: center
+
+.v-m
+	vertical-align: middle	
+
+.blue-light
+	color: $blue-light!important
+
+.blue
+	color: $blue!important	
+
+.green
+	color: $green!important	
+
+.gray 
+	color: $grayD!important
+
+.pink
+	color: $red!important	
+
+.gray-bg
+	background-color: $light-white
+
+.white-bg
+	background-color: $white	
+
+.dark
+	color: $dark!important	
+
+.white
+	color: $white!important
+
+.orange
+	color: $orange-light!important	
+
+
+.btn 
+	background: $green
+	border-radius: 4px
+	color: $white 
+	transition: all .3s ease
+	border: 1px solid $green
+	font-size: 1.4rem
+	line-height: 1.8rem 
+	font-weight: 700 
+	font-family: 'VisueltPro-Bold', sans-serif	
+	display: inline-flex
+	align-items: center 
+	justify-content: center
+	&:hover 
+		background-color: transparent 
+		color: $green	
+		border-color: $green
+
+.btn-default
+	min-height: 4.6rem
+	border: 1px solid transparent	
+
+.btn.focus, .btn:focus
+	outline: none!important 
+	box-shadow: none!important
+
+.btn-coming
+	background-color: transparent!important
+	border: transparent!important
+	background-image: url('../img/_src/svg/coming-btn.svg')
+	background-repeat: no-repeat
+	background-size: 100%
+	background-position: right center
+	min-width: 20.6rem
+	text-align: left 
+	justify-content: flex-start
+	padding-left: 2.9rem 
+	color: #fff!important
+	position: relative
+	left: -4rem 
+	border-top-left-radius: 0
+	border-bottom-left-radius: 0
+
+
+.btn-white
+	background-color: $white 
+	color: $dark 		
+	&:hover 
+		color: $white
+		background-color: transparent 
+		border: 1px solid $white
+
+.btn-medium, .btn-md
+	min-width: rem(190)
+	min-height: 5.8rem
+		
+.btn-medium-lg
+	min-width: 4.6rem
+
+.btn-full
+	max-width: 100%
+	width: 100%
+	min-width: unset	
+
+h1 
+	font-size: 4.5rem
+	line-height: 5.5rem 
+	color: $dark
+	font-family: 'VisueltPro-Medium', sans-serif
+	
+
+h2 
+	font-size: 4.5rem
+	line-height: 5.5rem 
+	color: $dark
+	font-family: 'VisueltPro-Medium', sans-serif
+	text-transform: capitalize		
+
+.sect-title
+	text-transform: uppercase
+	color: $grayD
+	font-size: 1.6rem
+	line-height: 2rem 
+	margin-bottom: .9rem 
+
+
+.main-head
+	padding-top: 3.2rem
+	padding-bottom: 3.2rem
+	position: fixed 
+	top: 0
+	z-index: 999
+	width: 100%
+	&.sticky
+		background-color: $white
+		box-shadow: -1px 0 10px rgba(134,150,158,.2)		
+.top-nav
+	display: flex
+	align-items: center 
+	justify-content: center
+
+	.logo 
+		display: none
+
+	.login-nav
+		display: none	
+	a 
+		margin: 0 1.65rem
+		color: $darkH
+		font-size: 1.4rem
+		line-height: 1.8rem
+		transition: all .3s ease 
+		&.active, &:hover  
+			color: $green			
+
+nav 
+	a 
+		transition: all .3s ease 
+		&.active, &:hover  
+			color: $green		
+
+.login-nav
+	display: flex
+	align-items: center
+
+	a:not(.btn) 
+		color: $dark
+		font-size: 1.4rem 
+		line-height: 1.8rem 
+		font-weight: 700 
+		font-family: 'VisueltPro-Bold', sans-serif
+
+.free-demo-btn
+	margin-left: 2.5rem
+
+.top-sect, .top-sect>.container:before
+	min-height: 965px
+
+.top-sect
+	display: flex
+	align-items: center
+
+	&>.container
+		position: relative
+
+	&>.container:before
+		content: ''
+		position: absolute
+		width: calc(498px + (1299 - 498) * ((100vw - 375px) / (1440 - 375)))
+		max-height: 100vh
+		top: 50%
+		left: calc(41.67% - 12px)
+		transform: translateY(-50%)
+		z-index: 0
+		background-image: url('../img/_src/svg/top-sec-illustration.svg')
+		background-repeat: no-repeat
+		background-size: contain
+
+		@media(min-width: 1441px)
+			left: calc(41.67% + 23px)
+
+	.descr
+		& > p
+			font-size: 2rem
+			line-height: 2.5rem
+			color: $grayD
+			margin-bottom: rem(25)
+
+	h1
+		margin-bottom: 3.2rem 
+
+.about-us-sect
+	padding-top: rem(35)
+	padding-bottom: 12rem
+
+	.sect-title
+		display: block
+		margin-bottom: rem(12)
+
+	.descr 
+		padding-left: 10rem
+		h2
+			margin-bottom: 5.5rem
+	blockquote
+		padding-top: 3.6rem
+		position: relative
+		left: -.5rem
+		p 
+			font-size: 1.7rem 
+			line-height: 2.4rem
+			margin-bottom: 4.6rem
+			color: $grayD
+		.info 
+			color: $dark
+			margin-bottom: 2.4rem
+			line-height: 2.6rem
+		span 
+			display: block
+			&.name
+				color: $dark 
+				font-size: 1.6rem
+				line-height: 2.4rem
+			&.position
+				color: $grayD
+				font-size: 1.3rem
+				line-height: 2.4rem	
+				margin-bottom: 3.8rem 	
+
+.features-sect
+	margin-top: 13rem
+	padding-top: rem(130)
+	padding-bottom: rem(153)
+	position: relative
+
+	& >.container >.row
+		flex-wrap: nowrap
+
+	h2 
+		margin-top: 1.5rem
+		margin-bottom: rem(19)
+
+	[class*="col"]
+		position: static
+		z-index: 20
+
+	.tab-content-img
+		display: flex
+		flex-direction: column
+		justify-content: center
+		margin-top: rem(115)
+		z-index: 10
+
+		img
+			height: auto
+
+	.tab-pane
+		background-position: left top
+		background-repeat: no-repeat
+		background-size: contain
+
+
+.features-tabs
+	width: 100%
+	position: relative
+
+	.nav-link 
+		border-bottom: 1px solid $grayBd
+		padding: 1.8rem 3.2rem 1.7rem
+		text-align: left
+		background-color: transparent!important
+
+		&:first-child
+			border-top: 1px solid $grayBd
+
+		picture 
+			display: none
+
+		&.active 
+			background-color: $white!important 
+			padding: 3.2rem
+			box-shadow: -1px 0px 10px rgba(134, 150, 158, 0.2)
+			border-radius: 1px
+			position: relative
+			&:before  
+				background-color: $green
+				height: 3px 
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				animation: 8s forwards slidein
+			&:hover 
+				&:before 
+					width: 100%
+					animation: none	
+
+			.title
+				margin-bottom: .8rem	
+		.title 
+			color: $dark
+			font-size: 1.6rem
+			line-height: 2.8rem
+			display: block
+		p 
+			color: $grayD
+			font-size: 1.4rem
+			line-height: 2.3rem
+			margin-bottom: 0					
+			display: none
+
+iframe
+	border: none
+
+.main-img
+	iframe
+		position: relative
+		left: -9rem
+		z-index: 30
+
+._1hbM3gWv-s._2vVvijodbn
+	display: none!important	
+
+
+@keyframes slidein 
+  from 
+    width: 0%
+  to 
+    width: 100%
+
+
+.saved-hours-sect
+	padding-top: 13rem 	
+	padding-bottom: 4rem
+	.preview-img
+		text-align: center
+		display: block
+		img 
+			max-width: 37.6rem
+	.preview-descr
+		background: $white
+		box-shadow: -1px 0px 10px rgba(134, 150, 158, 0.2)
+		border-radius: 4px
+		max-width: 32.6rem
+		position: relative
+		padding: 2.8rem 3.2rem 2.6rem 
+		top: -10.7rem
+		&::after
+			content: ''
+			position: absolute
+			right: -1.3rem
+			bottom: -2rem
+			width: 8.4rem
+			height: 8.4rem
+			background-color: $green
+			border-radius: 100%
+			background-image: url('../img/_src/svg/quote-icon.svg')
+			background-position: center
+			background-repeat: no-repeat
+		picture 
+			display: block
+			margin-top: .8rem
+			margin-left: 2rem
+		p 
+			color: $dark
+			font-size: 1.8rem
+			line-height: 2.7rem
+			margin-bottom: 1.6rem
+		.name
+			color: $dark
+			font-size: 1.6rem
+			line-height: 2.4rem
+			display: block	
+			svg 
+				display: inline-block
+				vertical-align: super
+				position: relative
+				top: .3rem
+				margin-right: .5rem	
+	h2
+		margin-top: .5rem
+		position: relative
+		left: -.3rem
+		margin-bottom: 4rem
+	.info-item
+		position: relative
+		left: -.3rem
+		margin-bottom: 4rem
+		.title
+			display: block
+			color: $dark
+			font-size: 1.8rem
+			line-height: 2.4rem
+			margin-bottom: 1.2rem
+		p 
+			color: $grayD
+			font-size: 1.6rem
+			line-height: 2.4rem
+
+.pricing-sect
+	padding-top: 13rem		
+	padding-bottom: 13rem	
+	h2 
+		margin-top: 1.5rem
+
+.plan-item
+	display: inline-block
+	vertical-align: top
+	background: $white
+	border: 1px solid rgba(134, 150, 158, 0.4)
+	box-sizing: border-box
+	border-radius: 18px
+	margin: 5rem 1.2rem 0
+	padding: 4rem
+	max-width: 37.6rem
+	width: 100%	
+	text-align: left
+
+	.status
+		display: inline-block
+		text-align: center
+		background-color: rgba(248,99,45,.2)
+		border-radius: 17px
+		color: $orange-light
+		font-size: 1.4rem
+		line-height: 2rem
+		min-width: 9.4rem
+		line-height: 2.8rem
+
+	.top-info
+		text-align: left
+		display: flex
+		align-items: center
+		.avatar
+			text-align: center
+			position: relative
+			vertical-align: middle
+			display: inline-block
+			box-sizing: border-box
+			border-radius: 4px	
+			min-width: 6.8rem
+			min-height: 6.8rem
+			margin-right: 2.2rem
+			&.avatar-inside
+				background: $light-white
+				border: 2px solid $green
+				img 
+					position: relative
+					top: .5rem
+		.title
+			display: inline-block
+			vertical-align: middle
+			color: $dark
+			font-size: 2.4rem
+			line-height: 3.1rem
+	.price
+		color: $dark 
+		font-size: 4.3rem
+		line-height: 5.5rem
+		margin-top: 2.4rem
+		margin-bottom: 3.8rem
+		.duration								
+			color: $grayD
+			font-size: 1.7rem 
+			line-height: 2rem
+
+	.pros-list
+		margin-bottom: rem(38)
+
+	.pros-item
+		display: flex
+
+		& + .pros-item
+			margin-top: rem(14)
+
+		.item-title
+			color: $dark 
+			font-size: 1.8rem
+			line-height: 1.2
+			display: inline-flex
+			padding-top: rem(2)
+			margin-left: rem(8)
+		svg
+			flex-shrink: 0
+			flex-basis: rem(19)
+			height: rem(19)
+			max-width: rem(19)
+			display: inline-block
+			vertical-align: middle
+
+		&.not-checked
+			.item-title
+				color: #86969e
+
+.why-us-sect
+	padding-top: 13rem
+	padding-bottom: 13rem
+	.number 
+		color: $green 
+		font-size: 7.7rem
+		line-height: 9.8rem
+		font-weight: 700
+		font-family: 'VisueltPro-Bold', sans-serif
+		margin-top: 1.8rem
+	.number-info
+		font-size: 1.8rem
+		line-height: 2.3rem
+		color: $dark
+	.items-wrap 
+		margin-top: 4.8rem
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap	
+		.item 
+			background: $white
+			box-shadow: -1px 0px 10px rgba(134, 150, 158, 0.2)
+			border-radius: 10px
+			min-height: 26rem
+			padding: 3.2rem
+			width: 31.6%
+			margin-bottom: 2.4rem
+
+			.btn 
+				margin: 2.5rem 0 0
+				display: flex
+			&.green-item
+				background-color: $green
+				.title
+					color: $white
+					font-size: 2.6rem
+					line-height: 3.3rem
+					margin-bottom: 1.6rem
+					margin-top: 0
+				p 
+					color: $white 
+					font-weight: 700 
+					font-size: 1.7rem 
+					line-height: 2.4rem 
+					text-transform: capitalize 			
+			.title
+				color: $dark 
+				font-size: 1.7rem
+				line-height: 2rem
+				margin-top: 1.6rem
+				margin-bottom: 1.6rem
+			p 
+				font-size: 1.3rem 
+				line-height: 2rem
+				margin: 0
+				color: $grayD		
+	h2
+		font-size: 3.8rem
+		line-height: 5.5rem 
+		margin-top: 3.1rem
+		text-transform: capitalize				
+
+
+.grow-up
+	padding-top: 25rem
+	.mobile-img
+		right: -1rem
+		top: -28rem
+		display: block
+		position: absolute
+		img 
+			max-width: 43rem
+	.container 
+		background-color: $green 
+		border-radius: 32px
+		max-width: 1176px
+		min-height: 44.8rem
+		h2
+			position: relative
+			left: -.5rem
+			margin-top: 8rem
+			margin-bottom: 6rem
+		.btn-white 
+			margin-left: -.5rem	
+
+.contact-sect
+	padding-top: 16.5rem
+	h2 
+		margin-top: 1rem
+		margin-bottom: 3rem
+	.descr	
+		padding-left: 10rem
+		p
+			max-width: rem(373)
+			font-size: 1.6rem
+			line-height: 2.4rem
+			color: $grayD
+			margin-bottom: 0
+
+.contact-form
+	padding-top: 1rem
+	.btn 
+		margin-top: 1.8rem
+	.form-group
+		position: relative
+		max-width: 47.5rem
+		margin-bottom: 4.3rem
+		label 
+			font-size: 1.2rem 
+			line-height: 2.4rem
+			color: $grayD
+			padding: 0 3px
+			background-color: $white
+			position: absolute
+			top: -1rem
+			left: 2.3rem
+			max-height: 1.5rem
+			margin-bottom: 0
+		textarea.form-control
+			min-height: 12.8rem		
+			padding: 1rem 1.8rem 0	
+		.form-control
+			border: 1px solid rgba(134,150,158,.3)
+			border-radius: 4px
+			min-height: 4.8rem 
+			padding: .5rem 1.8rem 0
+			color: $dark
+			font-size: 1.4rem
+			line-height: 3.4rem	
+
+.form-wrap
+	background-color: $white 
+	text-align: center
+	padding: 8rem 1.4rem 5.2rem
+	background-repeat: no-repeat
+	background-image: url('../img/_src/png/form-body.png')
+	background-position: center
+	min-height: 76.3rem
+	position: absolute
+	top: -28rem		
+	right: 1.2rem	
+	.btn 
+		margin: 0
+	picture 
+		display: block
+		&.form-logo
+			margin-bottom: 2rem 
+	p 
+		font-size: 1.2rem 
+		color: $dark 
+		line-height: 1.7rem		
+
+input:focus
+	outline: none!important 
+	box-shadow: none!important 
+
+.main-footer
+	background-color: $dark		
+	padding-top: 7.2rem
+	padding-bottom: 6rem
+	margin-top: 13rem
+	.container 
+		max-width: 100.5rem
+	h2 
+		margin-bottom: 4.2rem
+		font-size: 3.9rem
+		line-height: 4.8rem
+	.copyright
+		margin-top: 4.7rem
+		font-size: 1.4rem
+		line-height: 1.8rem
+		color: $white 
+		display: block
+		text-align: center
+	.row.top-bd 
+		margin: 0 auto
+		max-width: 97.6rem
+		border-top: 1px solid rgba(255,255,255,.2)			
+
+.sign-up-form
+	margin-bottom: 4.2rem
+	padding-left: 8.3rem
+	.form-group
+		position: relative
+		.form-control
+			padding-top: 1rem
+			padding-left: 1.8rem
+			padding-right: 10rem
+			background-color: transparent
+			border: 1px solid rgba(134,150,158,.4)
+			min-height: 4.8rem
+			border-radius: 4px		
+			font-size: 1.4rem
+			line-height: 2.4rem
+			color: $white
+			&::placeholder 
+				color: $white!important 
+	button 
+		background-color: transparent
+		border: none
+		outline: none
+		box-shadow: none
+		right: 2rem
+		top: 1.5rem
+		position: absolute
+		color: $white 
+		font-size: 1.4rem
+		line-height: 1.8rem
+		font-weight: 700		
+		font-family: 'VisueltPro-Bold', sans-serif
+		svg
+			margin-left: 1.5rem
+
+input[type=text]::-ms-clear   
+	display: none 
+	width: 0
+	height: 0
+input[type=text]::-ms-reveal 
+	display: none
+	width: 0
+	height: 0 
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration 
+	display: none	
+
+.modal
+	&:before 
+		width: 100%
+		height: 100%
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		background: #000000
+		opacity: 0.6
+		backdrop-filter: blur(23px)
+		z-index: 99
+	.modal-dialog
+		position: relative
+		z-index: 999
+		display: flex
+		align-items: center 
+		justify-content: center
+		max-width: 98.8rem 
+		transform: translate(0,0px)!important
+		.modal-body
+			padding: 0
+			display: flex
+			background-image: url('../img/_src/png/man-modal.png')
+			background-repeat: no-repeat
+			background-position: right 305px
+			background-size: 50vh
+		.modal-content
+			overflow: hidden
+			height: 74vh
+			width: 100%
+			background-color: $light-white
+			border-radius: 10px
+			padding: 0
+			.users-list
+				height: 60vh 
+				overflow-x: hidden 
+				overflow-y: scroll
+				margin-right: 1.6rem
+				margin-top: rem(24)
+
+			.btn-close 
+				position: absolute
+				right: 2.6rem
+				top: 3rem
+				background-color: transparent
+			.right-side
+				min-width: 50% 
+				text-align: center
+				padding-top: 16rem
+				h2 
+					font-size: 6rem 
+					line-height: 7.6rem
+					font-weight: 700
+					font-family: 'VisueltPro-Bold', sans-serif	
+			.contact-search-form
+				background-color: $white 
+				padding: 3.2rem 
+				min-width: 50%
+				height: 100%
+				padding-right: 0
+				.ui-menu
+					padding: 0!important
+					top: 0 !important
+
+					li, .ui-menu-item
+						list-style-type: none 
+						padding: 0!important
+						
+						&:hover
+							background-color:  #EFF2F9
+					a
+						padding: rem(16) rem(15)
+						display: block
+						border-bottom: 2px solid $light-white
+						color: $dark 
+						font-size: 1.4rem 
+						line-height: 1.8rem
+				.form-group
+					position: relative
+					margin-bottom: 0
+				.btn
+					background-color: transparent
+					border: none
+					position: absolute
+					left: .7rem
+					top: 1.5rem
+				.form-control
+					min-height: 5.6rem
+					max-width: 43rem
+					width: 100%
+					border: 1px solid rgba(134,150,158,.3)
+					padding-left: 4.6rem
+					font-size: 1.6rem 
+					line-height: 2rem
+
+
+//demo sect
+
+.demo-sect
+	padding-top: 146px
+	text-align: center 
+	.main-img
+		position: relative
+		max-width: 820px 
+		margin: 23px auto 0 
+		picture 
+			display: block
+			position: relative
+			z-index: 99
+		&:before 
+			position: absolute
+			content: ''
+			left: -294px
+			top: 19px
+			width: 305px
+			height: 532px
+			background-image: url('../img/_src/svg/demo-man.svg') 
+			background-repeat: no-repeat
+			z-index: 20
+		&:after 
+			z-index: 20
+			position: absolute
+			content: ''
+			right: -67px
+			bottom: 127px
+			width: 112px
+			height: 131px
+			background-image: url('../img/_src/svg/demo-paint-icon.svg') 
+			background-repeat: no-repeat			
+	h2 
+		font-size: 35px 
+		line-height: 45px
+		margin-bottom: 32px
+	p 
+		font-size: 20px 
+		line-height: 25px 
+		color: $grayD				 
+
+
+.ui-helper-hidden-accessible[role="status"]
+	display: none 
+
+
+
+@import "media"			

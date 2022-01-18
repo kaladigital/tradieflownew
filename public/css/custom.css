@@ -1,0 +1,83 @@
+.select2-results__options {
+    max-height: 300px !important;
+}
+
+body{
+    font-size: 14px;
+}
+
+.funnel-wrap{
+    display:block;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
+.funnel-column{
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.funnel-item{
+    cursor: pointer;
+}
+
+.delete-item{
+    top: 30px;
+}
+
+.margin-left-0{
+    margin-left: 0px !important;
+}
+
+.w250{
+    width: 250px !important;
+}
+
+.w160{
+    width:160px !important;
+}
+
+.w192{
+    width:192px !important;
+}
+
+label.error{
+    bottom: 7px;
+    color: #d32d41 !important;
+}
+
+.hour-item .day{
+    padding: 12px;
+}
+
+.custom-switch .custom-control-label{
+    cursor: pointer;
+}
+
+.display-hidden{
+    display:none !important;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.orange-text{
+    color:#F8632D;
+}
+
+.loader-text{
+    color:#43d14f;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.w32{
+    width:32px;
+}
+
+.line-height-20{
+    line-height:20px;
+}

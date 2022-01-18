@@ -1,0 +1,463 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+@media screen and (max-width:1400px)
+    html 
+        font-size: 8px      
+    .calendar.larger-calendar .fc-button-group .fc-button
+        line-height: 3.8rem    
+    .user-info .item .circle span
+        top: 2rem
+    .fc-addNewEventCalendar-button
+        background-size: 1.5rem
+        background-position: 1.6rem 1.1rem
+    .calendar.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number
+        line-height: 2rem!important        
+    .calendar.larger-calendar .fc-button-group .fc-button
+        padding-top: .2rem    
+    .user-info .item 
+        padding: 0 0 0 1rem
+        picture 
+            margin-right: .5rem
+        .value
+            top: 0
+        img 
+            width: 100%    
+    .user-control
+        padding-top: 0
+    .search-form .btn img 
+        width: 2rem   
+    body .content .quick-actions .item
+        padding-left: 1.5rem   
+        padding-right: 1.5rem
+        flex-wrap: nowrap
+        picture 
+            img
+                width: 100%     
+    .data-form .form-group .form-control
+        font-size: 1.7rem  
+    .table-filters .btn-add
+        padding-top: 1.5rem   
+    .dropdown .dropdown-item, .dropdown .dropdown-toggle
+        line-height: 3.5rem
+    .btn-add
+        background-size: 1.8rem    
+
+@media screen and (max-width:1199px)                     
+    html 
+        font-size: 7px
+    body .form-group.stage-field .form-control
+        background-position: 98% 12px   
+    .calendar.larger-calendar .fc-view-harness
+        border-radius: 10px   
+    .fc .fc-toolbar-chunk
+        margin-top: 2rem           
+    .widget-settings
+        padding-left: 0!important
+        padding-right: 0!important
+        padding-bottom: 0!important     
+    .message-search .form-group
+        max-width: 85%
+    .message-search .form-control
+        max-width: 85%        
+    .modal .call-controls .btn
+        img
+            width: 14px    
+    .call-btn
+        img
+            width: 1.6rem
+    .control-area .call-btn img
+        width: 2rem     
+    .control-area img 
+        width: 4rem           
+    .content .player
+        min-width: unset
+        .slider
+            margin: 0 5px 0 0!important
+    .content .player .download, .content .player .holder
+        right: 5px
+    .content .player .download
+        right: 40px       
+    .btn-next
+        line-height: 3.1rem
+        img 
+            width: 1.8rem                 
+    .content .player
+        padding: 0 5px            
+    .content .player .pin
+        width: 1rem!important
+        height: 1rem!important
+        top: -2px!important                
+    .content .profile-info
+        padding: 2rem     
+    .profile-action a img
+        width: 4rem                               
+    .close-btn
+        top: 2.2rem    
+    .form-progress.progress.inline-progress .current-val
+        top: -2px    
+    .table-filters .btn-add
+        top: 0
+        right: 0
+        background-size: 1.6rem
+        padding-top: 1rem
+    .dropdown
+        background-size: 1.8rem         
+    .table-wrap
+        overflow-x: scroll
+        table 
+            min-width: 640px
+            width: 150%      
+    .user-control .user-avatar
+        margin-left: 1rem   
+    .menu-toggle
+        margin-left: 0
+        position: relative
+        top: .5rem     
+    .content
+        margin-right: 0
+        margin-left: 0     
+        padding: 3rem 
+    .icon-nav
+        padding-right: 0   
+        .nav-link
+            padding: 0 
+            margin-bottom: 3rem
+    .start-call
+        top: 2rem  
+    .user-info .item, .user-info .item:nth-of-type(4n)
+        max-width: 32%
+        margin-right: 2%  
+    .user-info .item:nth-of-type(3n)
+        margin-right: 0       
+    .user-info .item.completed-item .value
+        top: 0   
+    .user-info .item .circle span
+        top: 2.5rem            
+    .history .item img
+        width: 100%    
+    .history .item:after
+        left: 3rem      
+    .widget
+        padding: 2rem 1.2rem  
+    .history .day, .history .view-all
+        margin-left: .5rem  
+    .quick-actions .item .title
+        font-size: 1.3rem  
+    body .content .quick-actions .item picture img
+        width: 25px   
+    .quick-actions.work-in-progress-widget .item picture  
+        min-width: 4.6rem  
+        margin-right: 1rem
+    body .content .quick-actions.work-in-progress-widget .item picture img  
+        width: 35px     
+    .history .item img
+        max-width: 50%  
+    .history .item:after
+        left: 2.5rem    
+    .history .item picture
+        width: 5.2rem 
+        height: 5.2rem 
+        padding: 0
+        display: flex
+        align-items: center 
+        justify-content: center
+    .btn-add
+        right: 2rem 
+        top: 1.2rem 
+        background-size: 14px       
+        padding-top: 1.2rem     
+    .data-form .form-group.status-field svg
+        top: 5px      
+@media screen and (max-width:767px)  
+    html 
+        font-size: 6px
+    .event-box .event-box-top .btn
+        svg 
+            width: 2rem   
+    .larger-calendar
+        margin-top: 2rem 
+    .calendar.larger-calendar .fc-header-toolbar
+        flex-wrap: wrap  
+    .calendar.larger-calendar .fc-today-button
+        min-width: 6.7rem!important                  
+    .widget-settings
+        padding-top: 0!important
+        .nav-vertical
+            padding-top: 0    
+    .settings-content .data-form .form-row > div
+        padding: 0!important
+    .widget-settings .col-md-10
+        padding: 0 10px
+    .hour-item
+        flex-wrap: wrap
+        position: relative
+        .data-form    
+            margin: 10px 0
+        .custom-switch
+            position: absolute
+            right: 0px
+            top: 15px
+    .form-items .form-row .form-group
+        margin: 5px 0
+    .biling-widget
+        flex-wrap: wrap
+        .info 
+            width: 100%
+            margin-bottom: 10px
+    .help-item
+        img 
+            width: 5rem                
+    .update-card-widget
+        flex-wrap: wrap
+        img 
+            max-width: 100%
+        .update-card
+            margin-top: 10px
+            margin-left: 0
+            display: flex
+            width: 100%
+            .btn 
+                max-height: 5.5rem
+                min-height: unset
+                width: 100%
+                max-width: 18rem
+                min-width: unset
+                &:first-of-type
+                    margin-right: 10px        
+    .subscription-card
+        img 
+            max-width: 100%
+        .top-info
+            flex-wrap: wrap
+        .subscribe-control
+            width: 100%
+            margin-top: 5px
+            .btn
+                width: 100%
+                max-width: 18rem!important
+                min-width: unset            
+    .integrations-tab
+        .turn-notifications .notification-item 
+            .title
+                max-width: 11.5rem
+                overflow: hidden
+    .turn-notifications .notification-item 
+        .btn
+            position: relative
+            top: -2px
+            margin-right: .2rem!important    
+            img 
+                width: 2rem
+    .turn-notifications .notification-item .custom-switch:last-of-type, .turn-notifications .top-panel .swither-option:last-of-type
+        margin-right: 0
+    .turn-notifications .notification-item .custom-switch
+        margin-right: 2.2rem
+    .turn-notifications picture
+        min-width: 15.6rem                
+    .turn-notifications .top-panel .swither-option
+        margin-right: 1rem    
+    .prefix-group 
+        .form-control
+            max-width: 11rem
+        .prefix
+            display: inline-block            
+    .widget-settings .row
+        margin-right: 0        
+    .settings-content
+        padding-left: 0
+    .preview-font-wrap
+        flex-wrap: wrap 
+        .preview-font
+            width: 100%
+            margin-left: 0
+            margin-top: 2rem            
+    .widget.user-message .message-area img  
+        max-width: 210px
+        max-height: 210px
+    .widget.user-message .message-area .multiply-images img
+        max-width: 66px
+        max-height: 66px       
+    .message-search .call-btn
+        line-height: 4.4rem
+        padding: 0
+        margin-top: 2rem
+    .message-search .form-group
+        max-width: 90%
+    .message-search .form-control
+        max-width: 90%            
+    .message-search .add-user
+        img
+            width: 4rem            
+    .modal .call-controls .btn img
+        width: 12px
+    .modal .modal-dialog
+        margin: 0 auto 
+        width: 95%            
+    .nav-tabs.nav-calls
+        margin-top: 0  
+    .call-history-wrap
+        margin-top: 6.5rem      
+    .dropdown svg
+        right: 7px    
+    .funnel-wrap
+        overflow-x: scroll 
+    .funnel-inner
+        min-width: 570px 
+        width: 150%     
+    .table-filters .dropdown
+        margin-left: 1rem
+        svg 
+            top: 1rem
+    .table-filters .btn
+        margin-left: 1rem                
+    .flex-wrap-m
+        flex-wrap: wrap
+    .logo
+        position: relative
+        top: .5rem
+        margin-left: 0 
+        max-width: 25rem 
+        img 
+            width: 100%   
+    .search-form
+        margin-left: 2rem 
+    .flex-v-top-m
+        align-items: flex-start    
+    .user-info .item
+        max-width: 48%!important
+        min-height: 80px
+        width: 100%
+        margin-right: 4%!important 
+        picture 
+            width: 50px
+            margin-right: 5px!important
+        img 
+            width: 100%
+    .user-info .item:nth-of-type(2n)
+        margin-right: 0!important        
+    .user-info .item .circle span
+        top: 3rem 
+        font-size: 3rem    
+    .quick-actions
+        display: flex
+        flex-wrap: wrap        
+        .widget-title
+            max-width: 100%
+            width: 100% 
+        .item
+            max-height: 60px
+            width: 32%
+            margin-right: 2%
+            &:nth-of-type(3n)
+                margin-right: 0
+    .data-form .form-row>div
+        padding: 0 10px  
+    .data-form .form-group
+        margin-top: 1rem  
+    .form-progress.progress
+        margin-top: 3rem  
+    .add-field .plus img 
+        width: 14px   
+    .data-form .btn-default
+        margin-top: 0rem   
+    .in-call-block
+        padding: 2.5rem 2rem   
+        .row 
+            align-items: center 
+    .p-10-m
+        padding: 0 10px
+
+@media screen and (max-width:575px) 
+    .message-search .call-btn
+        margin-left: .5rem
+    .message-search .form-group
+        max-width: 85%
+        padding: .6rem
+    .message-search .form-control
+        max-width: 85%         
+    .table-filters
+        flex-wrap: wrap
+    .user-control                                 
+        padding-top: 1rem 
+        padding-bottom: 1rem
+        text-align: right
+    .menu-toggle
+        top: 0  
+    .content
+        border-radius: 3rem     
+    .user-info .item .title
+        font-size: 2.3rem
+        line-height: 2rem
+    .user-info .item
+        padding-right: 1rem 
+        .title   
+            small 
+                display: block  
+    .quick-actions .item
+        width: 48%!important
+        margin-right: 4%!important
+        &:nth-of-type(2n)
+            margin-right: 0!important
+    .lead-information .item
+        min-height: 60px
+        max-width: 48%!important
+        margin-right: 4%!important
+        &:nth-of-type(2n)
+            margin-right: 0!important  
+    .btn-add
+        background-size: 10px
+        background-position: 7px 4px  
+@media screen and (max-width:374px)   
+    .start-call
+        right: 2rem
+        img 
+            width: 10px
+    .content
+        margin-left: 2rem   
+        padding: 3rem 1rem
+    .logo 
+        margin-left: 2rem  
+    .icon-nav
+        padding-top: 0     
+    .user-info .item picture
+        width: 40px        
+    .user-info .item .circle 
+        span 
+            top: 2.5rem
+        canvas 
+            width: 40px 
+            height: 40px  
+    .lead-information .item 
+        padding-left: 1rem
+        picture
+            width: 40px 
+        img 
+            width: 100%                                                        
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
